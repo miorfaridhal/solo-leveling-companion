@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Monarch Compass</title>
+  <rect width="512" height="512" rx="112" fill="#0B1D3A"/>
+  <rect x="40" y="40" width="432" height="432" rx="84" fill="none" stroke="#4CC6FF" stroke-width="10" opacity=".85"/>
+  <circle cx="256" cy="256" r="170" fill="#4CC6FF" opacity=".08"/>
+  <path d="M256 78L292 220 434 256 292 292 256 434 220 292 78 256 220 220z" fill="#4CC6FF"/>
+  <path d="M256 78L292 220 256 256 220 220z" fill="#9D86FF"/>
+  <path d="M434 256L292 292 256 256 292 220z" fill="#BFE9FF"/>
+  <circle cx="256" cy="256" r="28" fill="#0B1D3A"/>
+  <circle cx="256" cy="256" r="12" fill="#9D86FF"/>
+</svg>

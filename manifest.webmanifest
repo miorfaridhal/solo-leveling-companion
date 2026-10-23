@@ -1,0 +1,19 @@
+{
+  "name": "Monarch Compass: Solo Leveling: ARISE Companion",
+  "short_name": "Monarch Compass",
+  "description": "Fan-made Solo Leveling: ARISE companion: stat point planner, every unlock in the best order, draw pity calculator, F2P and spender plans, daily checklist. Works offline.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0A1222",
+  "theme_color": "#0A1222",
+  "categories": ["games", "utilities"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

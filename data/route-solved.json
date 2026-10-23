@@ -1,0 +1,1037 @@
+{
+  "f2p": [
+    {
+      "step": 1,
+      "id": "ch1",
+      "score": 115,
+      "why": [
+        "currency",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 2,
+      "id": "ch2",
+      "score": 143,
+      "why": [
+        "daily",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 3,
+      "id": "ch3",
+      "score": 133,
+      "why": [
+        "daily",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 4,
+      "id": "ch4",
+      "score": 123,
+      "why": [
+        "power",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 5,
+      "id": "ch51",
+      "score": 113,
+      "why": [
+        "power",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 6,
+      "id": "ch5",
+      "score": 143,
+      "why": [
+        "daily",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 7,
+      "id": "lv7",
+      "score": 110,
+      "why": [
+        "power",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 8,
+      "id": "hid18",
+      "score": 100,
+      "why": [
+        "power",
+        "early"
+      ]
+    },
+    {
+      "step": 9,
+      "id": "guild",
+      "score": 95,
+      "why": [
+        "currency",
+        "early"
+      ]
+    },
+    {
+      "step": 10,
+      "id": "lv30",
+      "score": 95,
+      "why": [
+        "power",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 11,
+      "id": "ch74",
+      "score": 90,
+      "why": [
+        "currency",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 12,
+      "id": "ch76",
+      "score": 103,
+      "why": [
+        "currency",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 13,
+      "id": "ch8",
+      "score": 103,
+      "why": [
+        "currency",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 14,
+      "id": "ch9",
+      "score": 108,
+      "why": [
+        "power",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 15,
+      "id": "ch10",
+      "score": 123,
+      "why": [
+        "seasonal",
+        "currency",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 16,
+      "id": "ch11",
+      "score": 98,
+      "why": [
+        "power",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 17,
+      "id": "ch12",
+      "score": 98,
+      "why": [
+        "power",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 18,
+      "id": "ch14",
+      "score": 98,
+      "why": [
+        "seasonal",
+        "currency",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 19,
+      "id": "ch15",
+      "score": 153,
+      "why": [
+        "daily",
+        "power",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 20,
+      "id": "ch18",
+      "score": 103,
+      "why": [
+        "daily",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 21,
+      "id": "ch23",
+      "score": 123,
+      "why": [
+        "seasonal",
+        "currency",
+        "power",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 22,
+      "id": "ch25",
+      "score": 128,
+      "why": [
+        "daily",
+        "power",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 23,
+      "id": "hlv40",
+      "score": 85,
+      "why": [
+        "power",
+        "early"
+      ]
+    },
+    {
+      "step": 24,
+      "id": "h10",
+      "score": 80,
+      "why": [
+        "power",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 25,
+      "id": "h25",
+      "score": 103,
+      "why": [
+        "power",
+        "currency",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 26,
+      "id": "nl",
+      "score": 80,
+      "why": [
+        "power",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 27,
+      "id": "monarch",
+      "score": 78,
+      "why": [
+        "daily",
+        "early"
+      ]
+    },
+    {
+      "step": 28,
+      "id": "wobl1",
+      "score": 75,
+      "why": [
+        "power",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 29,
+      "id": "leg1",
+      "score": 70,
+      "why": [
+        "power",
+        "early"
+      ]
+    },
+    {
+      "step": 30,
+      "id": "gem2",
+      "score": 70,
+      "why": [
+        "power",
+        "early"
+      ]
+    },
+    {
+      "step": 31,
+      "id": "tp2m",
+      "score": 60,
+      "why": [
+        "currency",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 32,
+      "id": "exp8",
+      "score": 60,
+      "why": [
+        "daily"
+      ]
+    },
+    {
+      "step": 33,
+      "id": "tp4m",
+      "score": 40,
+      "why": [
+        "power"
+      ]
+    },
+    {
+      "step": 34,
+      "id": "bc85",
+      "score": 43,
+      "why": [
+        "power"
+      ]
+    },
+    {
+      "step": 35,
+      "id": "wobl10",
+      "score": 20,
+      "why": [
+        "seasonal"
+      ]
+    }
+  ],
+  "light": [
+    {
+      "step": 1,
+      "id": "ch1",
+      "score": 105,
+      "why": [
+        "currency",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 2,
+      "id": "ch2",
+      "score": 143,
+      "why": [
+        "daily",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 3,
+      "id": "ch3",
+      "score": 133,
+      "why": [
+        "daily",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 4,
+      "id": "ch4",
+      "score": 128,
+      "why": [
+        "power",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 5,
+      "id": "ch51",
+      "score": 118,
+      "why": [
+        "power",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 6,
+      "id": "ch5",
+      "score": 143,
+      "why": [
+        "daily",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 7,
+      "id": "lv7",
+      "score": 115,
+      "why": [
+        "power",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 8,
+      "id": "hid18",
+      "score": 105,
+      "why": [
+        "power",
+        "early"
+      ]
+    },
+    {
+      "step": 9,
+      "id": "lv30",
+      "score": 100,
+      "why": [
+        "power",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 10,
+      "id": "hlv40",
+      "score": 93,
+      "why": [
+        "power",
+        "early"
+      ]
+    },
+    {
+      "step": 11,
+      "id": "guild",
+      "score": 85,
+      "why": [
+        "currency",
+        "early"
+      ]
+    },
+    {
+      "step": 12,
+      "id": "ch74",
+      "score": 80,
+      "why": [
+        "currency",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 13,
+      "id": "ch76",
+      "score": 93,
+      "why": [
+        "currency",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 14,
+      "id": "ch8",
+      "score": 93,
+      "why": [
+        "currency",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 15,
+      "id": "ch9",
+      "score": 113,
+      "why": [
+        "power",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 16,
+      "id": "ch10",
+      "score": 113,
+      "why": [
+        "seasonal",
+        "currency",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 17,
+      "id": "ch11",
+      "score": 103,
+      "why": [
+        "power",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 18,
+      "id": "ch12",
+      "score": 103,
+      "why": [
+        "power",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 19,
+      "id": "ch14",
+      "score": 88,
+      "why": [
+        "seasonal",
+        "currency",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 20,
+      "id": "ch15",
+      "score": 158,
+      "why": [
+        "daily",
+        "power",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 21,
+      "id": "ch18",
+      "score": 103,
+      "why": [
+        "daily",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 22,
+      "id": "ch23",
+      "score": 118,
+      "why": [
+        "seasonal",
+        "currency",
+        "power",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 23,
+      "id": "ch25",
+      "score": 133,
+      "why": [
+        "daily",
+        "power",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 24,
+      "id": "h10",
+      "score": 85,
+      "why": [
+        "power",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 25,
+      "id": "h25",
+      "score": 98,
+      "why": [
+        "power",
+        "currency",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 26,
+      "id": "nl",
+      "score": 85,
+      "why": [
+        "power",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 27,
+      "id": "wobl1",
+      "score": 80,
+      "why": [
+        "power",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 28,
+      "id": "leg1",
+      "score": 75,
+      "why": [
+        "power",
+        "early"
+      ]
+    },
+    {
+      "step": 29,
+      "id": "gem2",
+      "score": 75,
+      "why": [
+        "power",
+        "early"
+      ]
+    },
+    {
+      "step": 30,
+      "id": "monarch",
+      "score": 75,
+      "why": [
+        "daily",
+        "early"
+      ]
+    },
+    {
+      "step": 31,
+      "id": "exp8",
+      "score": 60,
+      "why": [
+        "daily"
+      ]
+    },
+    {
+      "step": 32,
+      "id": "tp2m",
+      "score": 50,
+      "why": [
+        "currency",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 33,
+      "id": "tp4m",
+      "score": 48,
+      "why": [
+        "power"
+      ]
+    },
+    {
+      "step": 34,
+      "id": "bc85",
+      "score": 48,
+      "why": [
+        "power"
+      ]
+    },
+    {
+      "step": 35,
+      "id": "wobl10",
+      "score": 20,
+      "why": [
+        "seasonal"
+      ]
+    }
+  ],
+  "spender": [
+    {
+      "step": 1,
+      "id": "ch1",
+      "score": 90,
+      "why": [
+        "currency",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 2,
+      "id": "ch2",
+      "score": 143,
+      "why": [
+        "daily",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 3,
+      "id": "ch3",
+      "score": 133,
+      "why": [
+        "daily",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 4,
+      "id": "ch4",
+      "score": 143,
+      "why": [
+        "power",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 5,
+      "id": "ch51",
+      "score": 133,
+      "why": [
+        "power",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 6,
+      "id": "ch5",
+      "score": 143,
+      "why": [
+        "daily",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 7,
+      "id": "lv7",
+      "score": 130,
+      "why": [
+        "power",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 8,
+      "id": "hid18",
+      "score": 120,
+      "why": [
+        "power",
+        "early"
+      ]
+    },
+    {
+      "step": 9,
+      "id": "lv30",
+      "score": 115,
+      "why": [
+        "power",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 10,
+      "id": "hlv40",
+      "score": 108,
+      "why": [
+        "power",
+        "early"
+      ]
+    },
+    {
+      "step": 11,
+      "id": "leg1",
+      "score": 90,
+      "why": [
+        "power",
+        "early"
+      ]
+    },
+    {
+      "step": 12,
+      "id": "guild",
+      "score": 70,
+      "why": [
+        "currency",
+        "early"
+      ]
+    },
+    {
+      "step": 13,
+      "id": "ch74",
+      "score": 65,
+      "why": [
+        "currency",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 14,
+      "id": "ch76",
+      "score": 78,
+      "why": [
+        "currency",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 15,
+      "id": "ch8",
+      "score": 78,
+      "why": [
+        "currency",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 16,
+      "id": "ch9",
+      "score": 128,
+      "why": [
+        "power",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 17,
+      "id": "nl",
+      "score": 100,
+      "why": [
+        "power",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 18,
+      "id": "ch10",
+      "score": 95,
+      "why": [
+        "seasonal",
+        "currency",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 19,
+      "id": "ch11",
+      "score": 118,
+      "why": [
+        "power",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 20,
+      "id": "ch12",
+      "score": 118,
+      "why": [
+        "power",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 21,
+      "id": "h10",
+      "score": 100,
+      "why": [
+        "power",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 22,
+      "id": "h25",
+      "score": 98,
+      "why": [
+        "power",
+        "currency",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 23,
+      "id": "monarch",
+      "score": 75,
+      "why": [
+        "daily",
+        "early"
+      ]
+    },
+    {
+      "step": 24,
+      "id": "ch14",
+      "score": 70,
+      "why": [
+        "seasonal",
+        "currency",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 25,
+      "id": "ch15",
+      "score": 173,
+      "why": [
+        "daily",
+        "power",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 26,
+      "id": "ch18",
+      "score": 103,
+      "why": [
+        "daily",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 27,
+      "id": "ch23",
+      "score": 118,
+      "why": [
+        "seasonal",
+        "currency",
+        "power",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 28,
+      "id": "ch25",
+      "score": 148,
+      "why": [
+        "daily",
+        "power",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 29,
+      "id": "wobl1",
+      "score": 95,
+      "why": [
+        "power",
+        "2 next",
+        "early"
+      ]
+    },
+    {
+      "step": 30,
+      "id": "gem2",
+      "score": 90,
+      "why": [
+        "power",
+        "early"
+      ]
+    },
+    {
+      "step": 31,
+      "id": "exp8",
+      "score": 60,
+      "why": [
+        "daily"
+      ]
+    },
+    {
+      "step": 32,
+      "id": "bc85",
+      "score": 60,
+      "why": [
+        "power"
+      ]
+    },
+    {
+      "step": 33,
+      "id": "tp2m",
+      "score": 38,
+      "why": [
+        "currency",
+        "1 next",
+        "early"
+      ]
+    },
+    {
+      "step": 34,
+      "id": "tp4m",
+      "score": 63,
+      "why": [
+        "power"
+      ]
+    },
+    {
+      "step": 35,
+      "id": "wobl10",
+      "score": 20,
+      "why": [
+        "seasonal"
+      ]
+    }
+  ]
+}

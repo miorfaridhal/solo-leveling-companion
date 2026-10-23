@@ -1,0 +1,191 @@
+[
+  {
+    "id": "act",
+    "every": "day",
+    "title": "Claim Activity Funds",
+    "how": "Builds up for 48 hours, so claim at least every other day. Activate Bonus adds 30% Gold and EXP.",
+    "unlockedBy": null
+  },
+  {
+    "id": "gates",
+    "every": "day",
+    "title": "Gates: use your Dungeon Entry Keys",
+    "how": "Best daily EXP. Pick the reward you need, and claim Gate missions before you level up.",
+    "unlockedBy": "ch2"
+  },
+  {
+    "id": "mine",
+    "every": "day",
+    "title": "Dispatch mining teams",
+    "how": "Use Dispatch All on cleared gates; they leave the list after 168 hours.",
+    "unlockedBy": "ch2"
+  },
+  {
+    "id": "ud",
+    "every": "day",
+    "title": "Unstable Dungeon",
+    "how": "Free keys on the artifact you set in Reward Settings.",
+    "unlockedBy": "ch5"
+  },
+  {
+    "id": "chaos",
+    "every": "day",
+    "title": "Battlefield of Chaos",
+    "how": "Gems. Sweep tiers whose Battle Missions are done.",
+    "unlockedBy": "ch15"
+  },
+  {
+    "id": "rift",
+    "every": "day",
+    "title": "Mind Rift",
+    "how": "Cores and core growth material.",
+    "unlockedBy": "ch18"
+  },
+  {
+    "id": "wobl",
+    "every": "day",
+    "title": "Workshop of Brilliant Light",
+    "how": "2 free invitations come back each day; do not sit at the cap.",
+    "unlockedBy": "ch25"
+  },
+  {
+    "id": "enf",
+    "every": "day",
+    "title": "Shadow Enforcer missions",
+    "how": "Send Shadows out before you log off.",
+    "unlockedBy": "monarch"
+  },
+  {
+    "id": "dm",
+    "every": "day",
+    "title": "Daily Missions",
+    "how": "Claim every point reward.",
+    "unlockedBy": null
+  },
+  {
+    "id": "pass",
+    "every": "day",
+    "title": "Hunter Pass missions",
+    "how": "Pass EXP for its tier rewards.",
+    "unlockedBy": null
+  },
+  {
+    "id": "story",
+    "every": "day",
+    "title": "Push one more Story or Hard stage",
+    "how": "First clears give Essence Stones and Custom Draw Tickets.",
+    "unlockedBy": null
+  },
+  {
+    "id": "wm",
+    "every": "week",
+    "title": "Weekly Missions to the maximum",
+    "how": "If you do not reach the maximum, the points carry over instead of resetting.",
+    "unlockedBy": null
+  },
+  {
+    "id": "ham",
+    "every": "week",
+    "title": "Hunters Association Missions",
+    "how": "Changes every weekly reset.",
+    "unlockedBy": null
+  },
+  {
+    "id": "conq",
+    "every": "week",
+    "title": "Unstable Dungeon Conquest Missions",
+    "how": "Artifact materials by number of clears.",
+    "unlockedBy": "ch5"
+  },
+  {
+    "id": "chaosw",
+    "every": "week",
+    "title": "Battlefield of Chaos clear-count rewards",
+    "how": "The clear count resets every week.",
+    "unlockedBy": "ch15"
+  },
+  {
+    "id": "poc",
+    "every": "week",
+    "title": "Power of Calamity, and last week's rank reward",
+    "how": "Rank rewards can only be claimed during the following week.",
+    "unlockedBy": "ch14"
+  },
+  {
+    "id": "sim",
+    "every": "week",
+    "title": "Simulation Gate: use every Entry Code",
+    "how": "Codes reset to the maximum each week, so unused codes are wasted.",
+    "unlockedBy": null
+  },
+  {
+    "id": "eoid",
+    "every": "week",
+    "title": "Edge of Illusion and Dreams: 5 tickets",
+    "how": "In season only.",
+    "unlockedBy": "ch10"
+  },
+  {
+    "id": "dcz",
+    "every": "week",
+    "title": "Deep Containment Zone keys",
+    "how": "Keys refill weekly.",
+    "unlockedBy": "exp8"
+  },
+  {
+    "id": "gboss",
+    "every": "week",
+    "title": "Guild Boss with both teams",
+    "how": "Your two best scores add up.",
+    "unlockedBy": "guild"
+  },
+  {
+    "id": "trial",
+    "every": "week",
+    "title": "Try new Battlefield of Trials floors",
+    "how": "Rate Up Draw Tickets on the way up.",
+    "unlockedBy": "ch74"
+  },
+  {
+    "id": "bot",
+    "every": "season",
+    "title": "Battlefield of Time: each boss under 1:30",
+    "how": "All top Achievement Rewards. Figures and guild buffs do not apply here.",
+    "unlockedBy": "ch10"
+  },
+  {
+    "id": "arch",
+    "every": "season",
+    "title": "The Architect's Test",
+    "how": "Essence Stones; rewards reset each season.",
+    "unlockedBy": "ch23"
+  },
+  {
+    "id": "lib",
+    "every": "season",
+    "title": "The Overseer's Forbidden Library",
+    "how": "Stage rewards once per season.",
+    "unlockedBy": "ch23"
+  },
+  {
+    "id": "hall",
+    "every": "season",
+    "title": "Hall of the Monarchs",
+    "how": "No entry cost, unlimited retries.",
+    "unlockedBy": "wobl10"
+  },
+  {
+    "id": "cards",
+    "every": "season",
+    "title": "Seasonal Cards",
+    "how": "Cards and Card Points reset when the season ends; spend the points first.",
+    "unlockedBy": null
+  },
+  {
+    "id": "ss",
+    "every": "season",
+    "title": "Special Summons (subscribers)",
+    "how": "Confirm your pick before the period ends.",
+    "unlockedBy": null
+  }
+]

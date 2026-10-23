@@ -1,0 +1,900 @@
+{
+  "phases": [
+    {
+      "id": "p1",
+      "order": 1,
+      "title": "First steps",
+      "about": "Story Chapters 1 to 5. Learn the systems and set up your daily farm."
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "title": "Core systems",
+      "about": "Chapters 7 to 12. Shadows, Battle Class, Successors and all artifact slots."
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "title": "Mid game",
+      "about": "Chapters 14 to 18 and Hard. Gems, Cores and weekly bosses."
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "title": "Endgame entry",
+      "about": "Chapters 23 to 25, around 2 million Total Power. Seasonal content and the Workshop."
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "title": "Endgame",
+      "about": "4 million Total Power and up. Expert story and the top challenge modes."
+    }
+  ],
+  "milestones": [
+    {
+      "id": "ch1",
+      "phase": "p1",
+      "line": "story",
+      "title": "Clear Story Chapter 1",
+      "unlocks": "Draw",
+      "requires": [],
+      "tags": [
+        "currency"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Open Draw and set your Custom list: 3 SSR hunters you would really use. You can change it any time.",
+        "Keep Essence Stones for Rate Up banners (see the Draws tab)."
+      ],
+      "warning": "",
+      "f2p": "Do not spend Essence Stones on the Custom banner; tickets go there.",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/91"
+      ]
+    },
+    {
+      "id": "ch2",
+      "phase": "p1",
+      "line": "story",
+      "title": "Clear Normal Chapter 2",
+      "unlocks": "Gates and the Shop",
+      "requires": [
+        "ch1"
+      ],
+      "tags": [
+        "daily"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Run Gates every day. They give Sung Jinwoo EXP, the most important daily reward, plus Gold and growth materials.",
+        "Tap the Reward Settings icon on a Gate to pick the material you need. Shadow Energy is the quickest Total Power.",
+        "After clearing, send mining teams from Go to Gate Mining. Cleared gates leave the mining list after 168 hours."
+      ],
+      "warning": "Claim Gate mission rewards before Jinwoo levels up. A level-up resets the missions, and unclaimed lower-tier rewards may be lost.",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/89",
+        "https://guide.netmarble.com/sololv/90",
+        "https://guide.netmarble.com/sololv/92"
+      ]
+    },
+    {
+      "id": "ch3",
+      "phase": "p1",
+      "line": "story",
+      "title": "Clear Normal Chapter 3",
+      "unlocks": "Gate sweeping",
+      "requires": [
+        "ch2"
+      ],
+      "tags": [
+        "daily"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Sweep Gates you have cleared; each sweep uses a Sweep Point.",
+        "Sweeps count only the Final Boss for Special Commissions. Play the Gate yourself when you need kill counts."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/89"
+      ]
+    },
+    {
+      "id": "lv7",
+      "phase": "p1",
+      "line": "level",
+      "title": "Sung Jinwoo reaches level 7",
+      "unlocks": "Craft",
+      "requires": [
+        "ch1"
+      ],
+      "tags": [
+        "power"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Crafting never fails. Craft hunter materials and weapons as soon as you have the parts."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/95"
+      ]
+    },
+    {
+      "id": "ch4",
+      "phase": "p1",
+      "line": "story",
+      "title": "Clear Chapter 4, Lizards",
+      "unlocks": "Fuse and Change Rune",
+      "requires": [
+        "ch3"
+      ],
+      "tags": [
+        "power"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Put a Skill Rune on each of Jinwoo's 3 skills; a rune turns a skill into a stronger Rune Skill with its own element.",
+        "Fuse spare runes and Blessing Stones. Each fusion adds Fusion Points, and a full gauge guarantees a higher-grade result."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/81",
+        "https://guide.netmarble.com/sololv/96"
+      ]
+    },
+    {
+      "id": "guild",
+      "phase": "p1",
+      "line": "guild",
+      "title": "Join an active guild",
+      "unlocks": "Guild Boss and the Guild shop",
+      "requires": [
+        "ch2"
+      ],
+      "tags": [
+        "currency"
+      ],
+      "confidence": "guide",
+      "todo": [
+        "Pick a guild that clears the Guild Boss every season. The Guild shop sells Weapon Custom Draw Tickets.",
+        "Guild Boss uses 6 hunters: Jinwoo plus 3 in Team A and 3 in Team B. Both teams' best scores add up."
+      ],
+      "warning": "New members cannot fight a Guild Boss season already running, so join early.",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/138",
+        "https://guide.netmarble.com/sololv/233"
+      ]
+    },
+    {
+      "id": "ch51",
+      "phase": "p1",
+      "line": "story",
+      "title": "Clear Chapter 5, Episode 1: The Hidden Quest",
+      "unlocks": "Artifacts",
+      "requires": [
+        "ch4"
+      ],
+      "tags": [
+        "power"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Equip pieces whose main stat matches the hunter's recommended stats, with at least 2 matching sub stats.",
+        "Enhance to +5, +10, +15 and +20; each adds or raises a sub stat. A failed attempt adds 1% to the next one's bonus rate."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/85",
+        "https://guide.netmarble.com/sololv/238"
+      ]
+    },
+    {
+      "id": "ch5",
+      "phase": "p1",
+      "line": "story",
+      "title": "Clear Chapter 5",
+      "unlocks": "Unstable Dungeon (artifact farm)",
+      "requires": [
+        "ch51"
+      ],
+      "tags": [
+        "daily"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Set the artifact you want in Reward Settings, then clear with your free keys every day. Keys are only spent on a clear.",
+        "Clear a tier's Battle Missions to unlock sweeping it.",
+        "Finish the weekly Conquest Missions there; they give artifact materials."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/99",
+        "https://guide.netmarble.com/sololv/238"
+      ]
+    },
+    {
+      "id": "hid18",
+      "phase": "p1",
+      "line": "hidden",
+      "title": "Clear Hidden Chapter 1, Episode 8: Unknown Power",
+      "unlocks": "Artifact Crafting",
+      "requires": [
+        "ch5"
+      ],
+      "tags": [
+        "power"
+      ],
+      "confidence": "official",
+      "todo": [
+        "When farming will not give the main stat you need, craft the piece: you choose 1 main and up to 2 sub stats with extra materials."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/95"
+      ]
+    },
+    {
+      "id": "ch74",
+      "phase": "p2",
+      "line": "story",
+      "title": "Clear Chapter 7-4",
+      "unlocks": "Battlefield of Trials and Special Commissions",
+      "requires": [
+        "ch5"
+      ],
+      "tags": [
+        "currency"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Climb Battlefield of Trials in Player and Hunter mode: Rate Up Draw Tickets, Essence Stones and Gold. Every floor is weak to all elements.",
+        "Special Commissions pay a one-time reward per kill-count tier on listed monsters."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/101",
+        "https://guide.netmarble.com/sololv/77"
+      ]
+    },
+    {
+      "id": "ch76",
+      "phase": "p2",
+      "line": "story",
+      "title": "Clear Chapter 7-6",
+      "unlocks": "Hard story",
+      "requires": [
+        "ch74"
+      ],
+      "tags": [
+        "currency"
+      ],
+      "confidence": "official",
+      "todo": [
+        "First clears on Hard give Essence Stones and Custom Draw Tickets. Push Hard whenever your power allows."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/88",
+        "https://guide.netmarble.com/sololv/233"
+      ]
+    },
+    {
+      "id": "ch8",
+      "phase": "p2",
+      "line": "story",
+      "title": "Clear Chapter 8",
+      "unlocks": "Battle Class",
+      "requires": [
+        "ch76"
+      ],
+      "tags": [
+        "currency"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Claim the Battle Class reward each time your best Sung Jinwoo Mode team passes a Total Power threshold: Essence Stones and Gold.",
+        "Armory bonuses count towards it."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/75"
+      ]
+    },
+    {
+      "id": "ch9",
+      "phase": "p2",
+      "line": "story",
+      "title": "Clear Chapter 9",
+      "unlocks": "Army of Shadows; necklace and bracelet slots",
+      "requires": [
+        "ch8"
+      ],
+      "tags": [
+        "power"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Level the Army of Shadows with Shadow Energy; it raises every Shadow and is one of the biggest Total Power gains.",
+        "Put your strongest Shadow first in the team; the leader's power applies to the whole team.",
+        "Fill the new necklace and bracelet slots."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/86",
+        "https://guide.netmarble.com/sololv/85",
+        "https://guide.netmarble.com/sololv/236"
+      ]
+    },
+    {
+      "id": "ch10",
+      "phase": "p2",
+      "line": "story",
+      "title": "Clear Chapter 10",
+      "unlocks": "Battlefield of Time; Edge of Illusion and Dreams",
+      "requires": [
+        "ch9"
+      ],
+      "tags": [
+        "seasonal",
+        "currency"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Battlefield of Time: clear each boss within 1:30 for every top Achievement Reward. Seasons run 5 weeks (4 to play).",
+        "Edge of Illusion and Dreams: co-op bosses with 5 free tickets a week during a season."
+      ],
+      "warning": "Edge of Illusion tickets are not given off-season, so use each week's tickets.",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/100",
+        "https://guide.netmarble.com/sololv/208"
+      ]
+    },
+    {
+      "id": "ch11",
+      "phase": "p2",
+      "line": "story",
+      "title": "Clear Chapter 11",
+      "unlocks": "Successors",
+      "requires": [
+        "ch10"
+      ],
+      "tags": [
+        "power"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Successors follow Jinwoo's level. Raise one through its exclusive weapon, artifacts, skills and upgrades. Legacy Seals draw more."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/211"
+      ]
+    },
+    {
+      "id": "ch12",
+      "phase": "p2",
+      "line": "story",
+      "title": "Clear Chapter 12",
+      "unlocks": "Ring and earring slots",
+      "requires": [
+        "ch11"
+      ],
+      "tags": [
+        "power"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Earrings have one main stat (Additional MP), so crafting one needs no main-stat material."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/85",
+        "https://guide.netmarble.com/sololv/4"
+      ]
+    },
+    {
+      "id": "lv30",
+      "phase": "p2",
+      "line": "level",
+      "title": "Sung Jinwoo reaches level 30",
+      "unlocks": "Armory",
+      "requires": [
+        "lv7"
+      ],
+      "tags": [
+        "power"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Every Jinwoo weapon you own goes into the Armory and adds part of its Total Power.",
+        "Enhance all slots evenly with Marks of Time."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/109",
+        "https://guide.netmarble.com/sololv/236"
+      ]
+    },
+    {
+      "id": "hlv40",
+      "phase": "p2",
+      "line": "level",
+      "title": "A hunter reaches level 40",
+      "unlocks": "Hunter Upgrade (15 per hunter)",
+      "requires": [
+        "lv30"
+      ],
+      "tags": [
+        "power"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Upgrade your main team with Mana Power Elixir from Gates. Hunters cannot pass Jinwoo's level, so his level comes first."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/83"
+      ]
+    },
+    {
+      "id": "ch14",
+      "phase": "p3",
+      "line": "story",
+      "title": "Clear Chapter 14",
+      "unlocks": "Power of Calamity; Challenge Medals",
+      "requires": [
+        "ch12"
+      ],
+      "tags": [
+        "seasonal",
+        "currency"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Power of Calamity: two teams, best damage counts. Ranking starts on Hard.",
+        "Claim last week's rank rewards during the next week; after that they are gone."
+      ],
+      "warning": "Play is blocked on Wednesdays 23:50 to 00:00 UTC while the ranking is calculated.",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/103",
+        "https://guide.netmarble.com/sololv/76"
+      ]
+    },
+    {
+      "id": "ch15",
+      "phase": "p3",
+      "line": "story",
+      "title": "Clear Chapter 15",
+      "unlocks": "Battlefield of Chaos, Gems, Reverse Mode",
+      "requires": [
+        "ch14"
+      ],
+      "tags": [
+        "daily",
+        "power"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Battlefield of Chaos gives gems. Clear a tier's Battle Missions to sweep it; Tier 16 and up gives gem promotion material.",
+        "Gem stats by colour: Attack%, HP%, Crit Damage, Precision, MP Consumption Reduction, Defense%.",
+        "Reverse Mode replays chapters with hunters for its own Battle Missions."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/122",
+        "https://guide.netmarble.com/sololv/120",
+        "https://guide.netmarble.com/sololv/88",
+        "https://guide.netmarble.com/sololv/236"
+      ]
+    },
+    {
+      "id": "ch18",
+      "phase": "p3",
+      "line": "story",
+      "title": "Clear Normal Chapter 18",
+      "unlocks": "Mind Rift (core farm)",
+      "requires": [
+        "ch15"
+      ],
+      "tags": [
+        "daily"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Farm Cores here. Clear-count rewards follow your Battle Tier."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/210"
+      ]
+    },
+    {
+      "id": "h10",
+      "phase": "p3",
+      "line": "hard",
+      "title": "Clear Hard Chapter 10",
+      "unlocks": "Cores",
+      "requires": [
+        "ch76",
+        "ch10"
+      ],
+      "tags": [
+        "power"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Equip Cores that match Jinwoo's element first, then the recommended stats shown at the top of each slot (Mind, Body, Energy).",
+        "Level, enhance and limit-break the ones you keep. Feeding a limit-broken core passes on its tier."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/141",
+        "https://guide.netmarble.com/sololv/236"
+      ]
+    },
+    {
+      "id": "leg1",
+      "phase": "p3",
+      "line": "runes",
+      "title": "Register a Legendary Skill Rune or Blessing Stone",
+      "unlocks": "Skill Research",
+      "requires": [
+        "ch4"
+      ],
+      "tags": [
+        "power"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Later (4 million Total Power), synthesise Transcendent runes and stones here. Materials come from the Honor Tokens shop and Legendary fusion or refinement."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/153",
+        "https://guide.netmarble.com/sololv/236"
+      ]
+    },
+    {
+      "id": "gem2",
+      "phase": "p3",
+      "line": "gems",
+      "title": "Fill gem page 1 with Rank 4+ gems",
+      "unlocks": "Gem page 2",
+      "requires": [
+        "ch15"
+      ],
+      "tags": [
+        "power"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Refine Rank 6 gems of B tier or lower into A tier with the same stats. It costs Essence Stones; a full point gauge guarantees your goal."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/120",
+        "https://guide.netmarble.com/sololv/96"
+      ]
+    },
+    {
+      "id": "nl",
+      "phase": "p3",
+      "line": "job",
+      "title": "Job Change: Night Lord",
+      "unlocks": "Second weapon slot for Jinwoo",
+      "requires": [
+        "ch9"
+      ],
+      "tags": [
+        "power"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Job Change tests open from story missions and achievements; tap the Job Emblem on the Sung Jinwoo screen to see yours.",
+        "Job Changes also give Stat Points, new skills and Blessing Stones."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/80",
+        "https://guide.netmarble.com/sololv/84"
+      ]
+    },
+    {
+      "id": "ch23",
+      "phase": "p4",
+      "line": "story",
+      "title": "Clear Normal Chapter 23",
+      "unlocks": "Architect's Test, Overseer's Forbidden Library, Hunter Co-Op Training",
+      "requires": [
+        "ch18"
+      ],
+      "tags": [
+        "seasonal",
+        "currency",
+        "power"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Architect's Test (seasonal) gives Essence Stones; its level follows your Battle Tier.",
+        "Overseer's Forbidden Library (seasonal): every hunter counts as every element; stage rewards once per season.",
+        "Hunter Co-Op Training: train one element's classes first."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/181",
+        "https://guide.netmarble.com/sololv/184",
+        "https://guide.netmarble.com/sololv/207"
+      ]
+    },
+    {
+      "id": "tp2m",
+      "phase": "p4",
+      "line": "power",
+      "title": "Main team reaches 2 million Total Power",
+      "unlocks": "Intermediate farming",
+      "requires": [
+        "ch8"
+      ],
+      "tags": [
+        "currency"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Spend Honor Tokens on Legacy Seal, Hunter Training Handbooks and the Transcendent Stone Selection Chest.",
+        "Clear Edge of Illusion and Dreams, Battlefield of Time, the Overseer's Library and the Architect's Test every season."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/233",
+        "https://guide.netmarble.com/sololv/236"
+      ]
+    },
+    {
+      "id": "ch25",
+      "phase": "p4",
+      "line": "story",
+      "title": "Clear Normal Chapter 25",
+      "unlocks": "Workshop of Brilliant Light",
+      "requires": [
+        "ch23"
+      ],
+      "tags": [
+        "daily",
+        "power"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Your first entry is free; after that each entry costs an invitation, and 2 free invitations come back each daily reset.",
+        "Seasons last 2 weeks and the recommended element changes by tier. Clearing a difficulty lets you sweep it and every lower one.",
+        "Shards of the Monarchs from here level Remnant Power."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/127"
+      ]
+    },
+    {
+      "id": "wobl1",
+      "phase": "p4",
+      "line": "workshop",
+      "title": "Clear Workshop of Brilliant Light Tier 1",
+      "unlocks": "Remnant Power",
+      "requires": [
+        "ch25"
+      ],
+      "tags": [
+        "power"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Summon a Monarch in battle for buffs. Each Remnant level gives Passive Points for its skills."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/142"
+      ]
+    },
+    {
+      "id": "monarch",
+      "phase": "p4",
+      "line": "job",
+      "title": "Job Change: Monarch of Shadows",
+      "unlocks": "Shadow Enforcer",
+      "requires": [
+        "nl"
+      ],
+      "tags": [
+        "daily"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Send Shadows on Enforcer missions every day; more Shadows allow longer missions.",
+        "Official picks: Abyssal Fragment, Shadow Energy and Shadow Skill Scroll I for Total Power; Marks of Time I for the Armory."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/182",
+        "https://guide.netmarble.com/sololv/236"
+      ]
+    },
+    {
+      "id": "h25",
+      "phase": "p4",
+      "line": "hard",
+      "title": "Clear Hard Chapter 25",
+      "unlocks": "Expert story and Figures",
+      "requires": [
+        "h10"
+      ],
+      "tags": [
+        "power",
+        "currency"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Expert bosses unlock Figures, random stats for Jinwoo and hunters. Lock a good stat with Seals of Unity, re-roll the rest with Polish of Change."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/88",
+        "https://guide.netmarble.com/sololv/225"
+      ]
+    },
+    {
+      "id": "tp4m",
+      "phase": "p5",
+      "line": "power",
+      "title": "Main team reaches 4 million Total Power",
+      "unlocks": "Advanced challenge content",
+      "requires": [
+        "tp2m"
+      ],
+      "tags": [
+        "power"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Transcendent runes and stones are now essential (Skill Research). Try Amplification on them.",
+        "Push Workshop of Brilliant Light, Simulation Gate, Power of Calamity and the Deep Containment Zone."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/233",
+        "https://guide.netmarble.com/sololv/236"
+      ]
+    },
+    {
+      "id": "exp8",
+      "phase": "p5",
+      "line": "expert",
+      "title": "Clear Expert Chapter 8",
+      "unlocks": "Deep Containment Zone",
+      "requires": [
+        "h25"
+      ],
+      "tags": [
+        "daily"
+      ],
+      "confidence": "official",
+      "todo": [
+        "Four hunters of one element activate Union, a once-per-battle burst.",
+        "Keys refill weekly. Multiplay spends extra keys for more rewards in one run."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/241"
+      ]
+    },
+    {
+      "id": "wobl10",
+      "phase": "p5",
+      "line": "workshop",
+      "title": "Clear Workshop Tier 10 in Sung Jinwoo Mode",
+      "unlocks": "Hall of the Monarchs",
+      "requires": [
+        "wobl1"
+      ],
+      "tags": [
+        "seasonal"
+      ],
+      "confidence": "official",
+      "todo": [
+        "No entry cost and unlimited retries. Your season score is the sum of all 3 floors."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": [
+        "https://guide.netmarble.com/sololv/216"
+      ]
+    },
+    {
+      "id": "bc85",
+      "phase": "p5",
+      "line": "power",
+      "title": "Reach Battle Class 85",
+      "unlocks": "The First Land (high-tier Workshop)",
+      "requires": [
+        "wobl1"
+      ],
+      "tags": [
+        "power"
+      ],
+      "confidence": "guide",
+      "todo": [
+        "A June 2026 community guide reports The First Land opening here. It is not in the official guide yet; check in game."
+      ],
+      "warning": "",
+      "f2p": "",
+      "spender": "",
+      "sources": []
+    }
+  ]
+}

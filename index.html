@@ -1,0 +1,1055 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Solo Leveling: ARISE Guide, Stat Planner and Route | Monarch Compass</title><meta property="og:title" content="Solo Leveling: ARISE Guide, Stat Planner and Route | Monarch Compass"><meta property="og:description" content="Where to put Sung Jinwoo's stat points, what to unlock next, how far your draws go, and a daily checklist. Free, offline, fan-made."><meta property="og:type" content="website"><meta property="og:url" content="https://miorfaridhal.github.io/solo-leveling-companion/"><meta property="og:image" content="https://miorfaridhal.github.io/solo-leveling-companion/icons/icon-512.png"><link rel="canonical" href="https://miorfaridhal.github.io/solo-leveling-companion/"><meta name="description" content="Free Solo Leveling: ARISE companion: a stat point planner for Sung Jinwoo, every content unlock in the best order, a draw pity calculator from the official rates, F2P and spender plans, and a daily and weekly checklist. Works offline."><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="icons/apple-touch-icon.png"><meta name="theme-color" content="#0A1222"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Monarch Compass"><meta name="application-name" content="Monarch Compass">
+<!-- artifact-head:start (tools/build-artifact.mjs copies this block into the claude.ai build) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500;600;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: a Hunter's "System" status window. One column of framed panels, a stat strip on top,
+   tabs on top for desktop and along the bottom on phones. Dark-first, light theme mirrored. */
+:root{
+  color-scheme:dark;
+  --bg:#070C17;--win:#0D1626;--win2:#111D33;--ink:#E4EEFF;--muted:#93A5C3;--frame:#22385C;--line:#18284A;
+  --accent:#4CC6FF;--accent-ink:#04121F;--shadow:#9D86FF;--glow:rgba(76,198,255,.16);
+  --ok:#5ED08F;--okbg:#0F2A1E;--warn:#FFC163;--warnbg:#2C220F;--lock:#5B6B88;--lockbg:#141E31;
+  --head:#0B1D3A;--head-ink:#D9E9FF;
+  --display:"Oxanium","Chakra Petch","Segoe UI",system-ui,sans-serif;
+  --sans:"Atkinson Hyperlegible","Segoe UI",system-ui,-apple-system,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"Cascadia Mono",Consolas,monospace;
+}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){
+  color-scheme:light;
+  --bg:#EDF2FA;--win:#FFFFFF;--win2:#F4F7FD;--ink:#0D1B31;--muted:#4A5C7A;--frame:#C3D2EA;--line:#DCE5F3;
+  --accent:#0B6BCB;--accent-ink:#FFFFFF;--shadow:#5A3FC8;--glow:rgba(11,107,203,.10);
+  --ok:#1C7F47;--okbg:#E1F4E9;--warn:#8F5200;--warnbg:#FFF0D4;--lock:#7A879C;--lockbg:#EEF1F6;
+  --head:#11294D;--head-ink:#EAF3FF;
+}}
+:root[data-theme="light"]{
+  color-scheme:light;
+  --bg:#EDF2FA;--win:#FFFFFF;--win2:#F4F7FD;--ink:#0D1B31;--muted:#4A5C7A;--frame:#C3D2EA;--line:#DCE5F3;
+  --accent:#0B6BCB;--accent-ink:#FFFFFF;--shadow:#5A3FC8;--glow:rgba(11,107,203,.10);
+  --ok:#1C7F47;--okbg:#E1F4E9;--warn:#8F5200;--warnbg:#FFF0D4;--lock:#7A879C;--lockbg:#EEF1F6;
+  --head:#11294D;--head-ink:#EAF3FF;
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 var(--sans);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 48px;overflow-x:hidden}
+.wrap{max-width:980px;margin:0 auto}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;line-height:1.2;text-wrap:balance;margin:0}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+button,input,select{font:inherit;color:inherit}
+p{margin:0}
+
+/* header */
+.top{display:flex;align-items:center;gap:14px;padding-top:18px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:12px;min-width:0;flex:1 1 300px}
+.logo svg{width:46px;height:46px;flex:none}
+.logo h1{font-size:clamp(1.35rem,4.2vw,2rem);letter-spacing:.01em}
+.logo h1 .eyebrow{display:block;font:600 .68rem/1.3 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.tag{color:var(--muted);font-size:.9rem;margin-top:2px}
+.save{font:12px var(--mono);color:var(--muted);border:1px solid var(--frame);border-radius:4px;padding:3px 8px;white-space:nowrap}
+.strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--frame);border:1px solid var(--frame);border-radius:6px;overflow:hidden;margin:14px 0 10px}
+.st{background:var(--win);padding:8px 12px;min-width:0}
+.st b{display:block;font:600 1.05rem/1.25 var(--mono);font-variant-numeric:tabular-nums;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.st span{display:block;font:600 .66rem/1.3 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.prof{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-bottom:12px}
+.prof>span{font:600 .72rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--frame);border-radius:6px;overflow:hidden}
+.seg button{background:var(--win);border:0;border-right:1px solid var(--frame);padding:7px 14px;cursor:pointer;font-weight:700;font-size:.9rem;color:var(--muted)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.prof small{color:var(--muted);font-size:.85rem}
+
+/* tabs */
+.menu{display:flex;gap:2px;border-bottom:1px solid var(--frame);margin-bottom:16px;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5}
+.menu a{display:flex;align-items:center;gap:7px;color:var(--muted);text-decoration:none;font:600 .95rem var(--display);letter-spacing:.03em;padding:11px 14px;border-bottom:2px solid transparent;margin-bottom:-1px}
+.menu a:hover{color:var(--ink)}
+.menu a[aria-current="page"]{color:var(--accent);border-bottom-color:var(--accent)}
+.menu svg{width:18px;height:18px;flex:none}
+.panel{display:none}
+.panel.on{display:block}
+.panel>h2{font-size:1.45rem;margin-bottom:6px}
+.lede{color:var(--muted);max-width:68ch;margin-bottom:14px}
+
+/* system window */
+.win{background:var(--win);border:1px solid var(--frame);border-radius:6px;padding:14px 16px;margin-bottom:14px;position:relative}
+.win.sys{box-shadow:0 0 0 1px var(--glow),0 0 26px var(--glow)}
+.win>h3{font-size:1.1rem;margin-bottom:8px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.sysbar{font:600 .7rem var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+.note{color:var(--muted);font-size:.92rem;max-width:72ch}
+.note+.note{margin-top:6px}
+.warn{font-size:.9rem;color:var(--warn);background:var(--warnbg);border-radius:4px;padding:6px 10px;margin:8px 0 0}
+.pill{font:600 .64rem/1.6 var(--mono);letter-spacing:.08em;text-transform:uppercase;border-radius:3px;padding:0 6px;border:1px solid var(--frame);color:var(--muted);white-space:nowrap}
+.pill.ready{background:var(--glow);color:var(--accent);border-color:var(--accent)}
+.pill.done{background:var(--okbg);color:var(--ok);border-color:transparent}
+.pill.locked{background:var(--lockbg);color:var(--lock);border-color:transparent}
+.conf{font:600 .62rem/1.6 var(--mono);letter-spacing:.06em;text-transform:uppercase;border-radius:3px;padding:0 6px;white-space:nowrap}
+.conf.official{color:var(--ok);background:var(--okbg)}
+.conf.guide{color:var(--warn);background:var(--warnbg)}
+.conf.estimate{color:var(--shadow);background:var(--lockbg)}
+.btn{background:var(--win2);border:1px solid var(--frame);border-radius:5px;padding:7px 13px;cursor:pointer;font-weight:700;font-size:.9rem}
+.btn:hover{border-color:var(--accent)}
+.btn.pri{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+
+/* next step */
+#next h3{font-size:1.25rem}
+#next .un{margin:4px 0 8px;color:var(--muted)}
+#next ol{margin:8px 0 10px;padding-left:22px}
+#next ol li{margin:4px 0}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.chip{font-size:.82rem;border:1px solid var(--frame);border-radius:4px;padding:2px 8px;color:var(--muted);background:var(--win2);cursor:pointer}
+.chip:hover{color:var(--ink);border-color:var(--accent)}
+
+/* phases and milestones */
+.grp{margin-bottom:16px}
+.grp>header{background:var(--head);color:var(--head-ink);border-radius:6px 6px 0 0;padding:9px 14px;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px}
+.grp>header h3{font-size:1.05rem}
+.grp>header .cnt{font:12px var(--mono);margin-left:auto;opacity:.9}
+.grp>header p{flex:1 1 100%;font-size:.86rem;opacity:.85}
+.grp>ul{list-style:none;margin:0;padding:0;border:1px solid var(--frame);border-top:0;border-radius:0 0 6px 6px;background:var(--win)}
+.ms{display:grid;grid-template-columns:32px minmax(0,1fr);gap:8px;padding:10px 12px;border-top:1px solid var(--line)}
+.ms:first-child{border-top:0}
+.ms[data-st="done"] .mt{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--frame)}
+.ms[data-st="ready"]{background:linear-gradient(90deg,var(--glow),transparent 60%)}
+.tick{display:grid;place-items:start center;padding-top:2px}
+.tick input,.dl input{width:20px;height:20px;accent-color:var(--accent);cursor:pointer;margin:0}
+.mh{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center}
+.mt{font-weight:700}
+.ms .un{font-size:.9rem;color:var(--muted)}
+.ms details{margin-top:4px}
+.ms summary,.fold>summary{cursor:pointer;color:var(--accent);font-weight:700;font-size:.88rem;width:fit-content}
+.ms details ol{margin:6px 0;padding-left:20px;font-size:.93rem}
+.ms details ol li{margin:3px 0}
+.side{font-size:.88rem;color:var(--muted);margin-top:6px}
+.side b{color:var(--ink)}
+.src{font:11px var(--mono);color:var(--muted);margin-top:6px}
+
+/* forms */
+.form{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px 14px}
+.fld{display:flex;flex-direction:column;gap:4px;min-width:0}
+.fld>span{font:600 .7rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.fld input,.fld select{background:var(--win2);border:1px solid var(--frame);border-radius:5px;padding:8px 10px;min-width:0;width:100%;font-variant-numeric:tabular-nums}
+.fld small{color:var(--muted);font-size:.78rem}
+.chk{display:flex;gap:8px;align-items:center;font-size:.92rem;cursor:pointer}
+.chk input{width:18px;height:18px;accent-color:var(--accent)}
+fieldset{border:1px solid var(--line);border-radius:6px;padding:10px 12px 12px;margin:12px 0 0;min-width:0}
+legend{font:600 .72rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--accent);padding:0 6px}
+
+/* stat plan output */
+.alloc{display:grid;gap:7px;margin:4px 0 12px}
+.bar{display:grid;grid-template-columns:52px minmax(0,1fr) 70px;gap:10px;align-items:center;font:13px var(--mono)}
+.bar i{display:block;height:12px;border-radius:2px;background:var(--line);overflow:hidden;position:relative}
+.bar i::after{content:"";position:absolute;inset:0;width:var(--w,0%);background:linear-gradient(90deg,var(--accent),var(--shadow));border-radius:2px}
+.bar b{text-align:right;font-weight:600;font-variant-numeric:tabular-nums}
+.bar span{font-weight:600;letter-spacing:.06em}
+#st-out ol{margin:0;padding-left:22px}
+#st-out ol li{margin:4px 0}
+
+/* draws */
+.big{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:6px 0 12px}
+.big div{background:var(--win2);border:1px solid var(--line);border-radius:5px;padding:9px 12px}
+.big b{display:block;font:600 1.45rem/1.2 var(--mono);font-variant-numeric:tabular-nums}
+.big span{font-size:.8rem;color:var(--muted)}
+.gauge{height:10px;border-radius:2px;background:var(--line);position:relative;overflow:hidden;margin:6px 0 2px}
+.gauge i{position:absolute;inset:0;width:var(--w,0%);background:var(--accent)}
+.gauge u{position:absolute;top:0;bottom:0;left:85.7%;width:2px;background:var(--warn)}
+.tw{overflow-x:auto;max-width:100%}
+table.t{border-collapse:collapse;width:100%;font:13px var(--mono);font-variant-numeric:tabular-nums}
+table.t th,table.t td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+table.t th{font:600 .68rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+table.t td.n{text-align:right}
+table.t input{width:100%;min-width:64px;background:var(--win2);border:1px solid var(--frame);border-radius:4px;padding:5px 6px;font:13px var(--mono)}
+table.t td.nm input{min-width:140px}
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.plans .win{margin:0}
+.plans .win[data-on="true"]{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.plans ol{margin:6px 0 0;padding-left:20px;font-size:.93rem}
+.plans ol li{margin:4px 0}
+
+/* daily */
+.dl{list-style:none;margin:0;padding:0}
+.dl li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:8px;padding:8px 2px;border-top:1px solid var(--line)}
+.dl li:first-child{border-top:0}
+.dl li.lock{opacity:.55}
+.dl li.lock input{visibility:hidden}
+.dl .dt{font-weight:700}
+.dl li.got .dt{text-decoration:line-through;color:var(--muted)}
+.dl .dh{font-size:.88rem;color:var(--muted)}
+
+/* build */
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+.grid2 .win{margin:0}
+.kv{list-style:none;margin:0;padding:0;font-size:.93rem}
+.kv li{padding:5px 0;border-top:1px solid var(--line)}
+.kv li:first-child{border-top:0}
+.kv b{font-family:var(--display);font-weight:600}
+.team{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0}
+.team span{font:600 .8rem var(--mono);border:1px solid var(--accent);color:var(--accent);border-radius:3px;padding:2px 8px}
+ul.plain{margin:6px 0 0;padding-left:20px;font-size:.93rem}
+ul.plain li{margin:3px 0}
+
+/* footer, backup, about */
+.foot{margin-top:26px;border-top:1px solid var(--frame);padding-top:14px}
+.srclist{font-size:.88rem;padding-left:20px}
+.srclist li{margin:3px 0}
+#bk-ask{margin-top:8px}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(84px + env(safe-area-inset-bottom,0px));background:var(--head);color:var(--head-ink);border:1px solid var(--accent);border-radius:6px;padding:8px 10px 8px 14px;display:flex;gap:10px;align-items:center;z-index:20;box-shadow:0 6px 24px rgba(0,0,0,.35)}
+.toast .x{background:none;border:0;color:inherit;font-size:1.2rem;cursor:pointer}
+
+@media (max-width:720px){
+  .strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .menu{position:fixed;left:0;right:0;bottom:0;top:auto;margin:0;border-bottom:0;border-top:1px solid var(--frame);background:var(--win);padding:0 max(4px,env(safe-area-inset-right,0px)) env(safe-area-inset-bottom,0px) max(4px,env(safe-area-inset-left,0px));z-index:10}
+  .menu a{flex:1 1 0;min-width:0;flex-direction:column;gap:2px;padding:8px 2px 7px;font-size:.68rem;border-bottom:0;border-top:2px solid transparent;margin:0;text-align:center}
+  .menu a[aria-current="page"]{border-top-color:var(--accent)}
+  .menu svg{width:21px;height:21px}
+  body{padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))}
+  .ms{grid-template-columns:28px minmax(0,1fr);padding:10px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+<!-- artifact-head:end -->
+</head><body>
+<div class="wrap">
+<header class="top">
+  <div class="logo">
+    <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="2" y="2" width="60" height="60" rx="10" fill="var(--head)" stroke="var(--accent)" stroke-width="2"/><path d="M32 9 37 27 55 32 37 37 32 55 27 37 9 32 27 27Z" fill="var(--accent)"/><path d="M32 9 37 27 32 32 27 27Z" fill="var(--shadow)"/><circle cx="32" cy="32" r="4" fill="var(--head)"/></svg>
+    <div><h1><span class="eyebrow">Solo Leveling: ARISE</span>Monarch Compass</h1><p class="tag">Stat points, next unlock, draws and dailies, worked out from your own progress.</p></div>
+  </div>
+  <span class="save" id="save" role="status">Loading…</span>
+</header>
+<div class="strip" aria-label="Your progress">
+  <div class="st"><b id="s-ms">0/0</b><span>Milestones</span></div>
+  <div class="st"><b id="s-next">—</b><span>Next unlock</span></div>
+  <div class="st"><b id="s-day">0 left</b><span>Today's dailies</span></div>
+  <div class="st"><b id="s-tier">—</b><span>Power tier</span></div>
+</div>
+<div class="prof">
+  <span>Your plan</span>
+  <div class="seg" id="prof" role="group" aria-label="Spending plan">
+    <button type="button" data-p="f2p" aria-pressed="true">Free to play</button><button type="button" data-p="light" aria-pressed="false">Light spender</button><button type="button" data-p="spender" aria-pressed="false">Spender</button>
+  </div>
+  <small id="prof-note"></small>
+</div>
+<nav class="menu" aria-label="Sections">
+  <a href="#path" data-tab="path"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></svg>Path</a>
+  <a href="#stats" data-tab="stats"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Stats</a>
+  <a href="#draws" data-tab="draws"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 8a2 2 0 0 0 0 4v5h18v-5a2 2 0 0 0 0-4V5H3z"/><path d="M14 5v12" stroke-dasharray="2 2"/></svg>Draws</a>
+  <a href="#daily" data-tab="daily"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="4" width="16" height="17" rx="2"/><path d="M8 2v4M16 2v4M8 13l3 3 5-6"/></svg>Daily</a>
+  <a href="#build" data-tab="build"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14.5 3.5 20 3l-.5 5.5L9 19l-4-4zM5 15l-2 6 6-2M7 13l4 4"/></svg>Build</a>
+  <a href="#about" data-tab="about"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg>About</a>
+</nav>
+
+<!-- ================= PATH ================= -->
+<section class="panel" id="p-path" aria-labelledby="h-path">
+  <h2 id="h-path">Path</h2>
+  <p class="lede">Every unlock in ARISE, in the order that pays off fastest for your plan. Tick what you have done; the next step updates from your ticks.</p>
+  <div class="win sys" id="next"></div>
+  <details class="win fold" id="stuck">
+    <summary>Stuck on a stage or a boss? Check these first</summary>
+    <ol class="plain" style="margin-top:8px;padding-left:22px">
+      <li><b>Bring the boss's weakness.</b> Hitting a boss's weak element deals 150% damage; hitting the element it is strong against deals 50% less. Swap weapons, Skill Runes and hunters to the recommended element shown before battle (hunters with it show ↑). <span class="conf official">official</span></li>
+      <li><b>Use the right team shape.</b> In Sung Jinwoo Mode: Stacker + Breaker + Supporter. Bosses with a Break gauge need a Breaker; Overload needs a Stacker. <span class="conf official">official</span></li>
+      <li><b>Respec Jinwoo's stats for the fight.</b> Use the Boss plan on the Stats tab (more Perception for precision). A reset costs only a little Gold. <span class="conf guide">guide</span></li>
+      <li><b>Raise the ⭐ items before grinding.</b> Jinwoo level, weapon level and advancement, hunter level and advancement, artifact enhancement, and Army of Shadows level give the biggest Total Power gains. <span class="conf official">official</span></li>
+      <li><b>Dodge, don't tank.</b> Extreme Evasion (a perfectly timed dodge) beats putting points into Vitality. <span class="conf guide">guide</span></li>
+      <li><b>Practise the pattern.</b> Story Special Stages replay each main boss with unlimited retries, and the Training Room has a damage counter and a recommended skill order. <span class="conf official">official</span></li>
+      <li><b>Short on EXP?</b> The New Hunter Protocol (Strategy Training) gives fast EXP with fixed gear, and Gates are the best daily EXP. <span class="conf official">official</span></li>
+    </ol>
+  </details>
+  <div id="phases"></div>
+  <details class="win fold">
+    <summary>How the order is chosen</summary>
+    <p class="note" style="margin-top:8px">Each milestone has its requirements from the official guide (for example, Unstable Dungeon needs Chapter 5). Among the milestones you can do now, the planner picks the one with the highest score for your plan. The same scorer builds the full route in <code>ROUTE.md</code> and is checked on every change.</p>
+    <div class="tw" style="margin-top:8px"><table class="t" id="weights"></table></div>
+  </details>
+</section>
+
+<!-- ================= STATS ================= -->
+<section class="panel" id="p-stats" aria-labelledby="h-stats">
+  <h2 id="h-stats">Stat points</h2>
+  <p class="lede">Where to put Sung Jinwoo's stat points for the content you are about to play. Points come from levelling up and from Job Changes, and you can reset them for a little Gold, so keep one plan for farming and one for bosses.</p>
+  <div class="win sys">
+    <p class="sysbar">[ System ] Stat allocation</p>
+    <div class="form">
+      <label class="fld"><span>Points to spend</span><input id="st-pts" type="number" min="0" step="1" inputmode="numeric"><small>Unspent points, or all of them after a reset</small></label>
+      <label class="fld"><span>What you are fighting</span><select id="st-ct"><option value="story">Story, Gates, farming</option><option value="boss">Bosses with armour or shields</option><option value="time">Time attack (Battlefield of Time)</option></select></label>
+      <label class="fld"><span>Precision target %</span><input id="st-pt" type="number" min="0" max="100" step="1" inputmode="numeric"><small>Boss default 90, time attack 80</small></label>
+    </div>
+    <fieldset>
+      <legend>Your stat screen (optional)</legend>
+      <div class="form">
+        <label class="fld"><span>Attack</span><input id="st-atk" type="number" min="0" inputmode="decimal"></label>
+        <label class="fld"><span>Precision %</span><input id="st-prec" type="number" min="0" max="100" step="0.1" inputmode="decimal"></label>
+        <label class="fld"><span>Crit Rate %</span><input id="st-cr" type="number" min="0" max="100" step="0.1" inputmode="decimal"></label>
+        <label class="fld"><span>Crit Damage %</span><input id="st-cd" type="number" min="0" step="0.1" inputmode="decimal"><small>The bonus a crit adds, as shown</small></label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>What one point adds (optional)</legend>
+      <p class="note" style="margin-bottom:8px">Add one point to a stat and read the change in the preview before you confirm. With these three numbers the planner switches from the guide rules to a damage model.</p>
+      <div class="form">
+        <label class="fld"><span>Attack per Strength</span><input id="st-gs" type="number" min="0" step="0.01" inputmode="decimal"></label>
+        <label class="fld"><span>Precision % per Perception</span><input id="st-gp" type="number" min="0" step="0.001" inputmode="decimal"></label>
+        <label class="fld"><span>Crit Damage % per Agility</span><input id="st-ga" type="number" min="0" step="0.001" inputmode="decimal"></label>
+      </div>
+    </fieldset>
+    <div class="row" style="margin-top:12px;gap:18px">
+      <label class="chk"><input type="checkbox" id="st-surv">I keep dying</label>
+      <label class="chk"><input type="checkbox" id="st-mana">I run out of MP</label>
+    </div>
+  </div>
+  <div class="win" id="st-out" aria-live="polite"></div>
+  <div class="grid2">
+    <div class="win">
+      <h3>What each stat does <span class="conf official">official</span></h3>
+      <div class="tw"><table class="t">
+        <thead><tr><th>Stat</th><th>Effect</th><th>Priority</th></tr></thead>
+        <tbody>
+          <tr><td>STR Strength</td><td>Raises Jinwoo's basic Attack</td><td>1st, always</td></tr>
+          <tr><td>PER Perception</td><td>Raises Precision and the minimum damage you deal</td><td>2nd, for bosses</td></tr>
+          <tr><td>AGI Agility</td><td>Raises Critical Hit Damage</td><td>3rd, once crit rate is high</td></tr>
+          <tr><td>VIT Vitality</td><td>Raises HP and Defense</td><td>Only if you keep dying</td></tr>
+          <tr><td>INT Intelligence</td><td>Raises MP</td><td>Only if you run dry</td></tr>
+        </tbody>
+      </table></div>
+      <p class="note" style="margin-top:8px">Effects are from the in-game Sung Jinwoo page. The priority column is the community consensus. <span class="conf guide">guide</span></p>
+    </div>
+    <div class="win">
+      <h3>Where Total Power really comes from <span class="conf official">official</span></h3>
+      <p class="note">Stat points matter most early. Later, these give far more. The official growth guide marks them ⭐:</p>
+      <ul class="plain">
+        <li>Sung Jinwoo level up</li>
+        <li>Weapon level up and advancement</li>
+        <li>Hunter level up and advancement</li>
+        <li>Artifact enhancement</li>
+        <li>Army of Shadows level up</li>
+      </ul>
+      <p class="note" style="margin-top:8px">Then: Blessing Stones, Skill Runes, Cores, Gems, Armory, Hunter Co-Op Training.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DRAWS ================= -->
+<section class="panel" id="p-draws" aria-labelledby="h-draws">
+  <h2 id="h-draws">Draws and spending</h2>
+  <p class="lede">How many draws you need for the hunter or weapon you want, from the official Draw Support rules, and where to spend for your plan.</p>
+  <div class="win sys">
+    <p class="sysbar">[ System ] Draw Support</p>
+    <div class="form">
+      <label class="fld"><span>Banner</span><select id="dr-b"><option value="rateup">Rate Up hunter</option><option value="custom">Custom hunter (3 picks)</option><option value="weapon">Weapon Custom (2 picks)</option></select></label>
+      <label class="fld" id="dr-w-f"><span>You want</span><select id="dr-w"><option value="one">One specific pick</option><option value="list">Any of your picks</option></select></label>
+      <label class="fld"><span>Copies wanted</span><select id="dr-c"><option value="1">1 (A0)</option><option value="2">2 (A1)</option><option value="3">3 (A2)</option><option value="4">4 (A3)</option><option value="5">5 (A4)</option><option value="6">6 (A5)</option></select><small>Hunters: 1 copy + 1 per advancement</small></label>
+      <label class="fld"><span>Draw Support now</span><input id="dr-p" type="number" min="0" max="69" step="1" inputmode="numeric"><small>Draws since your last SSR, 0–69</small></label>
+      <label class="fld"><span>Tickets you have</span><input id="dr-t" type="number" min="0" step="1" inputmode="numeric"></label>
+      <label class="fld"><span>Essence Stones</span><input id="dr-es" type="number" min="0" step="1" inputmode="numeric"></label>
+      <label class="fld"><span>Stones per draw</span><input id="dr-rate" type="number" min="1" step="1" inputmode="numeric"><small>Check the price in the Draw screen</small></label>
+    </div>
+    <div class="row" style="margin-top:10px"><label class="chk"><input type="checkbox" id="dr-g">My last SSR was off my list (next one is guaranteed on it)</label></div>
+  </div>
+  <div class="win" id="dr-out" aria-live="polite"></div>
+  <details class="win fold">
+    <summary>The official Draw Support rules</summary>
+    <ul class="plain" style="margin-top:8px">
+      <li>Base SSR rate: 1.2% per draw.</li>
+      <li>From the 60th draw since your last SSR, the SSR rate rises by 5.8% on each draw. An SSR is guaranteed by the 70th.</li>
+      <li>Rate Up: an SSR is the featured hunter 50% of the time. If it is not, your next SSR is the featured hunter.</li>
+      <li>Custom: 50% one of your 3 picks, each equally likely; after a miss, the next SSR is one of your picks.</li>
+      <li>Weapon Custom: the same with 2 picks.</li>
+      <li>The Rate Up count carries over to the next Rate Up hunter when a banner ends.</li>
+      <li>Collaboration banners have their own rules: an SSR is always the featured hunter, and the count resets when the banner ends.</li>
+    </ul>
+    <p class="note" style="margin-top:8px">Our reading: the 60th draw is the first with the raise (7.0%). The calculator uses the rules above and nothing else. <span class="conf official">official</span></p>
+  </details>
+  <div class="plans" id="plans">
+    <div class="win" data-plan="f2p">
+      <h3>Free to play</h3>
+      <ol>
+        <li>Spend Essence Stones on Rate Up banners only, for a hunter your team is missing (element or class). <span class="conf guide">guide</span></li>
+        <li>Stopping mid-count is safe: Rate Up Draw Support carries to the next Rate Up hunter. <span class="conf official">official</span></li>
+        <li>Use Custom Draw Tickets on the Custom banner with 3 picks you would really use. Weapon Custom Tickets (Guild shop) go on 2 picks for Jinwoo's main element.</li>
+        <li>Go deep, not wide: take your main damage dealer to A3, then A5, before starting another. <span class="conf guide">guide</span></li>
+        <li>Finish Monarch Milestones: they give an SSR Jinwoo weapon, an SSR hunter, an SSR exclusive weapon and Custom Draw Tickets. <span class="conf official">official</span></li>
+        <li>Free stones: Story and Hard first clears, Battle Class, Battle Tier, Codex, Hunter Archive, Successor Archive and redeem codes.</li>
+      </ol>
+    </div>
+    <div class="win" data-plan="light">
+      <h3>Light spender</h3>
+      <ol>
+        <li>Everything in the free plan still applies.</li>
+        <li>Buy only what pays out over weeks: a subscription or the Hunter Pass, and only if you will finish its tiers. Subscribing also opens Special Summons. <span class="conf official">official</span></li>
+        <li>Compare every other pack with the calculator below. A pack is good when its draws per unit of money beat the subscription's.</li>
+        <li>Skip packs of keys, stamina or cosmetics; they add no permanent power.</li>
+      </ol>
+    </div>
+    <div class="win" data-plan="spender">
+      <h3>Spender, for fast growth</h3>
+      <ol>
+        <li>Your Sung Jinwoo main weapon first: it is used in every Jinwoo-mode fight, and weapons advance up to 10 times. <span class="conf official">official</span></li>
+        <li>Then your main damage dealer to A5, with their exclusive weapon. Power of Calamity Hard rates your teams by weapon and hunter advancement. <span class="conf official">official</span></li>
+        <li>Then the Stacker and Supporter that team needs, to A1–A3.</li>
+        <li>Buy Diamonds through the best pack, not at the plain top-up price; rank packs with the calculator below.</li>
+        <li>Money buys draws, not levels. Gates, Unstable Dungeon and the Workshop still have to be played every day.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="win" style="margin-top:14px">
+    <h3>Pack value calculator</h3>
+    <p class="note">Type in packs from the shop. Each one is ranked by draws per unit of money. The first row is an example, not a real pack.</p>
+    <div class="row" style="margin:10px 0">
+      <label class="fld" style="max-width:220px"><span>Essence Stones per Diamond</span><input id="pk-dia" type="number" min="0" step="0.01" inputmode="decimal"></label>
+    </div>
+    <div class="tw"><table class="t" id="packs">
+      <thead><tr><th>Pack</th><th>Price</th><th>Draw tickets</th><th>Essence Stones</th><th>Diamonds</th><th>Draws</th><th>Per 1 money</th><th></th></tr></thead>
+      <tbody></tbody>
+    </table></div>
+    <div class="row" style="margin-top:10px"><button type="button" class="btn" id="pk-add">Add a pack</button></div>
+  </div>
+</section>
+
+<!-- ================= DAILY ================= -->
+<section class="panel" id="p-daily" aria-labelledby="h-daily">
+  <h2 id="h-daily">Daily and weekly</h2>
+  <p class="lede">Your routine, limited to what you have unlocked. Daily ticks clear at the daily reset, weekly ticks at the weekly reset. Seasonal ticks stay until you clear them.</p>
+  <div class="win">
+    <div class="form">
+      <label class="fld"><span>Daily reset hour (UTC)</span><input id="rh" type="number" min="0" max="23" step="1" inputmode="numeric"><small>Shown at the top right of Missions</small></label>
+      <label class="fld"><span>Weekly reset</span><input type="text" value="Thursday, same hour" readonly><small>Power of Calamity locks Wednesdays 23:50–00:00 UTC for the weekly ranking</small></label>
+    </div>
+    <div class="row" style="margin-top:10px"><label class="chk"><input type="checkbox" id="dl-lock">Show locked content</label></div>
+  </div>
+  <div class="win"><h3>Every day <span class="pill" id="c-d"></span></h3><ul class="dl" id="dl-d"></ul></div>
+  <div class="win"><h3>Every week <span class="pill" id="c-w"></span></h3><ul class="dl" id="dl-w"></ul></div>
+  <div class="win"><h3>Each season <span class="pill" id="c-s"></span></h3><ul class="dl" id="dl-s"></ul>
+    <div class="row" style="margin-top:10px"><button type="button" class="btn" id="dl-sclr">Clear seasonal ticks</button></div>
+  </div>
+</section>
+
+<!-- ================= BUILD ================= -->
+<section class="panel" id="p-build" aria-labelledby="h-build">
+  <h2 id="h-build">Build</h2>
+  <p class="lede">Teams, shadows, runes and gear. Most of this is the official guide's own recommendations (October 2026).</p>
+  <div class="grid2">
+    <div class="win">
+      <h3>Team shapes <span class="conf official">official</span></h3>
+      <p class="note">Sung Jinwoo Mode (Jinwoo plus three hunters):</p>
+      <div class="team"><span>Stacker</span><span>Breaker</span><span>Supporter</span></div>
+      <p class="note" style="margin-top:8px">Hunter Mode, best first:</p>
+      <div class="team"><span>Buster</span><span>Stacker</span><span>Supporter</span></div>
+      <div class="team"><span>Striker</span><span>Stacker</span><span>Supporter</span></div>
+      <div class="team"><span>Striker</span><span>Breaker</span><span>Supporter</span></div>
+      <ul class="kv" style="margin-top:8px">
+        <li><b>Striker</b>: main damage.</li>
+        <li><b>Buster</b>: bursts enemies in Elemental Overload.</li>
+        <li><b>Stacker</b>: fills the element gauge to trigger Overload.</li>
+        <li><b>Breaker</b>: empties the Break gauge to daze the boss.</li>
+        <li><b>Supporter</b>: shields and buffs.</li>
+      </ul>
+    </div>
+    <div class="win">
+      <h3>Elements <span class="conf official">official</span></h3>
+      <p class="note">Fire, Water, Wind, Light, Dark, and no element. Before each fight the game shows a recommended element.</p>
+      <ul class="plain">
+        <li>Weak element: +150% damage.</li>
+        <li>Element the boss is strong against: −50% damage.</li>
+        <li>Match weapons, Jinwoo's Skill Runes and hunters to the recommended element. Hunters that match show ↑.</li>
+        <li>Fill the element gauge to 100% for Overload, or empty the Break gauge for Dazed; both open a big damage window.</li>
+      </ul>
+    </div>
+    <div class="win">
+      <h3>Shadows <span class="conf official">official</span></h3>
+      <p class="note">Grow first the Shadows that buff Jinwoo and the whole party:</p>
+      <div class="team"><span>Beru</span><span>Beste</span><span>Cerbie</span></div>
+      <p class="note" style="margin-top:8px">Then by the element you need:</p>
+      <div class="team"><span>Greed</span><span>Brute</span><span>Uros</span></div>
+      <ul class="plain" style="margin-top:8px">
+        <li>The leader (first slot) Shadow's power applies to the whole team; up to 3 Shadows per team.</li>
+        <li>Army level (Shadow Energy) raises every Shadow at once: do that before single upgrades.</li>
+        <li>Shadow skills level from Elite (to 5) and Elite Knight (to 10); Armament opens at General.</li>
+      </ul>
+    </div>
+    <div class="win">
+      <h3>Skill Runes and Blessing Stones <span class="conf official">official</span></h3>
+      <p class="note">Runes for Jinwoo's 3 skills, one per element:</p>
+      <ul class="kv">
+        <li><b>Light</b>: Double Down</li>
+        <li><b>Dark</b>: Darkness Obliteration Kick</li>
+        <li><b>Wind</b>: Vacuum Wave</li>
+        <li><b>Water</b>: Flowing Water Kick</li>
+        <li><b>Fire</b>: Firestorm Kick</li>
+      </ul>
+      <p class="note" style="margin-top:8px">Blessing Stones (4 slots). Empowerment: Reawakening, Sharp Perception, Iron Stance, Do or Die. Survival: Kasaka's Steel Scales, Weapon Resonance, Dual Guard.</p>
+      <p class="note">Heroic and Legendary come from Fusion; Transcendent from Skill Research.</p>
+    </div>
+    <div class="win">
+      <h3>Artifacts <span class="conf official">official</span></h3>
+      <ol class="plain" style="padding-left:20px">
+        <li>Set the artifact you want in Unstable Dungeon Reward Settings and farm it.</li>
+        <li>Keep pieces whose main stat matches the hunter's recommended stats and with at least 2 matching sub stats (see the Hunter screen).</li>
+        <li>Enhance to +20; +5, +10, +15 and +20 each add or raise a sub stat.</li>
+        <li>Bad rolls? Enhancement Reset starts over (materials are not returned), or craft the piece and pick 1 main and 2 sub stats.</li>
+        <li>Finish with Enchantment on the sub stats.</li>
+      </ol>
+    </div>
+    <div class="win">
+      <h3>Cores, Gems, Armory <span class="conf official">official</span></h3>
+      <ul class="plain">
+        <li><b>Cores</b> (Mind, Body, Energy): first Jinwoo's element, then the recommended stats shown at the top of each core slot, then combat effects.</li>
+        <li><b>Gems</b> by colour: Attack%, HP%, Crit Damage, Precision, MP Consumption Reduction, Defense%.</li>
+        <li><b>Armory</b>: enhance all slots evenly; high levels of one slot cost too much rare material.</li>
+        <li><b>Co-Op Training</b>: train one element's classes first.</li>
+      </ul>
+    </div>
+    <div class="win">
+      <h3>Shop picks <span class="conf official">official</span></h3>
+      <p class="note">Honor Tokens exchange, best first:</p>
+      <ul class="plain"><li>Legacy Seal (draws Successors)</li><li>Hunter Training Handbooks</li><li>Skill Rune &amp; Blessing Stone Transcendent Stone Selection Chest</li><li>Then: Mana Power Extract, Time Crystal, Abyssal Crystal, Shadow Waves</li></ul>
+      <p class="note" style="margin-top:8px">Shadow Enforcer rewards: Abyssal Fragment, Shadow Energy and Shadow Skill Scroll I for fast Total Power; Marks of Time I for the Armory; Artifact Enhancement Chip II, Mana Power Elixir I, Weapon Enhancement Gear II or a Melding Cube chest for hunters and weapons.</p>
+    </div>
+    <div class="win">
+      <h3>Weapons: check the date <span class="conf guide">guide</span></h3>
+      <p class="note">Weapon rankings change with every patch, and none of the lists we found is clearly current. A June 2026 community guide names the wind SSRs Soma &amp; Asura and Moonlit Gale as Weapon Custom targets. Older lists rank Demonic Plum Flower Sword, Moonshadow, Shadow Scythe, The Huntsman and Thetis' Grimoire at the top.</p>
+      <p class="note">What does not change: pick weapons for the element your content asks for, commit to one main weapon, and salvage the rest for Traces of Dimensions.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="panel" id="p-about" aria-labelledby="h-about">
+  <h2 id="h-about">About</h2>
+  <div class="win">
+    <h3>What the labels mean</h3>
+    <ul class="kv">
+      <li><span class="conf official">official</span> From the official ARISE guide on guide.netmarble.com (dated October 2026) or the in-game rate pages.</li>
+      <li><span class="conf guide">guide</span> Community consensus from player guides. Usually right, sometimes out of date.</li>
+      <li><span class="conf estimate">estimate</span> Worked out by this app from your numbers with a simple model. Check it in game.</li>
+    </ul>
+  </div>
+  <div class="win">
+    <h3>Privacy</h3>
+    <p class="note" id="priv-text">Your ticks and numbers are saved only in this browser. Nothing is sent anywhere. Use Export below to copy them to another device.</p>
+    <p class="note" id="priv-count" hidden></p>
+  </div>
+  <div class="win">
+    <h3>Sources</h3>
+    <ol class="srclist" id="srclist"></ol>
+  </div>
+  <div class="win">
+    <h3>Disclaimer</h3>
+    <p class="note">Fan-made and unofficial. Solo Leveling: ARISE is a trademark of Netmarble and D&amp;C Media. This project is not affiliated with or endorsed by them. The icon is an original drawing, not game artwork. Code is MIT licensed.</p>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="win">
+    <h3>Your progress</h3>
+    <p class="note" id="bk-where">Saved in this browser. Export a file to keep a copy or move to another device; importing replaces what is here.</p>
+    <div class="row" style="margin-top:10px">
+      <button type="button" class="btn" id="bk-exp">Export progress</button>
+      <button type="button" class="btn" id="bk-imp">Import progress</button>
+      <input type="file" id="bk-file" accept="application/json,.json" hidden>
+      <span class="note" id="bk-msg" role="status"></span>
+    </div>
+    <div class="row" id="bk-ask" hidden><span class="note" id="bk-ask-t"></span><button type="button" class="btn pri" id="bk-yes">Replace</button><button type="button" class="btn" id="bk-no">Cancel</button></div>
+  </div>
+  <p class="note"><a href="#about">Sources, credits and privacy</a></p>
+</footer>
+</div>
+
+<script src="js/engine.js"></script>
+<script>
+(function(){
+"use strict";
+var $=function(s,r){return (r||document).querySelector(s)},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+var E=window.MonarchEngine;
+var KEY="slc-tracker-v1",UIKEY="slc-ui-v1";
+var GUIDE="https://guide.netmarble.com/sololv/";
+
+/* ---------- data: phases and milestones ----------
+   req: milestone ids that must be done first. tags: daily | power | currency | seasonal (route weights).
+   line: story | hard | expert | workshop | job, for keeping a line together. src: official guide page ids.
+   conf: official (unlock condition from the official guide) | guide (community). */
+var PH=[
+  ["p1","First steps","Story Chapters 1 to 5. Learn the systems and set up your daily farm."],
+  ["p2","Core systems","Chapters 7 to 12. Shadows, Battle Class, Successors and all artifact slots."],
+  ["p3","Mid game","Chapters 14 to 18 and Hard. Gems, Cores and weekly bosses."],
+  ["p4","Endgame entry","Chapters 23 to 25, around 2 million Total Power. Seasonal content and the Workshop."],
+  ["p5","Endgame","4 million Total Power and up. Expert story and the top challenge modes."]
+];
+var MS=[
+{id:"ch1",ph:"p1",line:"story",t:"Clear Story Chapter 1",un:"Draw",tags:["currency"],src:[91],conf:"official",
+ todo:["Open Draw and set your Custom list: 3 SSR hunters you would really use. You can change it any time.","Keep Essence Stones for Rate Up banners (see the Draws tab)."],
+ f2p:"Do not spend Essence Stones on the Custom banner; tickets go there."},
+{id:"ch2",ph:"p1",line:"story",t:"Clear Normal Chapter 2",req:["ch1"],un:"Gates and the Shop",tags:["daily"],src:[89,90,92],conf:"official",
+ todo:["Run Gates every day. They give Sung Jinwoo EXP, the most important daily reward, plus Gold and growth materials.","Tap the Reward Settings icon on a Gate to pick the material you need. Shadow Energy is the quickest Total Power.","After clearing, send mining teams from Go to Gate Mining. Cleared gates leave the mining list after 168 hours."],
+ warn:"Claim Gate mission rewards before Jinwoo levels up. A level-up resets the missions, and unclaimed lower-tier rewards may be lost."},
+{id:"ch3",ph:"p1",line:"story",t:"Clear Normal Chapter 3",req:["ch2"],un:"Gate sweeping",tags:["daily"],src:[89],conf:"official",
+ todo:["Sweep Gates you have cleared; each sweep uses a Sweep Point.","Sweeps count only the Final Boss for Special Commissions. Play the Gate yourself when you need kill counts."]},
+{id:"lv7",ph:"p1",line:"level",t:"Sung Jinwoo reaches level 7",req:["ch1"],un:"Craft",tags:["power"],src:[95],conf:"official",
+ todo:["Crafting never fails. Craft hunter materials and weapons as soon as you have the parts."]},
+{id:"ch4",ph:"p1",line:"story",t:"Clear Chapter 4, Lizards",req:["ch3"],un:"Fuse and Change Rune",tags:["power"],src:[81,96],conf:"official",
+ todo:["Put a Skill Rune on each of Jinwoo's 3 skills; a rune turns a skill into a stronger Rune Skill with its own element.","Fuse spare runes and Blessing Stones. Each fusion adds Fusion Points, and a full gauge guarantees a higher-grade result."]},
+{id:"guild",ph:"p1",line:"guild",t:"Join an active guild",req:["ch2"],un:"Guild Boss and the Guild shop",tags:["currency"],src:[138,233],conf:"guide",
+ todo:["Pick a guild that clears the Guild Boss every season. The Guild shop sells Weapon Custom Draw Tickets.","Guild Boss uses 6 hunters: Jinwoo plus 3 in Team A and 3 in Team B. Both teams' best scores add up."],
+ warn:"New members cannot fight a Guild Boss season already running, so join early."},
+{id:"ch51",ph:"p1",line:"story",t:"Clear Chapter 5, Episode 1: The Hidden Quest",req:["ch4"],un:"Artifacts",tags:["power"],src:[85,238],conf:"official",
+ todo:["Equip pieces whose main stat matches the hunter's recommended stats, with at least 2 matching sub stats.","Enhance to +5, +10, +15 and +20; each adds or raises a sub stat. A failed attempt adds 1% to the next one's bonus rate."]},
+{id:"ch5",ph:"p1",line:"story",t:"Clear Chapter 5",req:["ch51"],un:"Unstable Dungeon (artifact farm)",tags:["daily"],src:[99,238],conf:"official",
+ todo:["Set the artifact you want in Reward Settings, then clear with your free keys every day. Keys are only spent on a clear.","Clear a tier's Battle Missions to unlock sweeping it.","Finish the weekly Conquest Missions there; they give artifact materials."]},
+{id:"hid18",ph:"p1",line:"hidden",t:"Clear Hidden Chapter 1, Episode 8: Unknown Power",req:["ch5"],un:"Artifact Crafting",tags:["power"],src:[95],conf:"official",
+ todo:["When farming will not give the main stat you need, craft the piece: you choose 1 main and up to 2 sub stats with extra materials."]},
+
+{id:"ch74",ph:"p2",line:"story",t:"Clear Chapter 7-4",req:["ch5"],un:"Battlefield of Trials and Special Commissions",tags:["currency"],src:[101,77],conf:"official",
+ todo:["Climb Battlefield of Trials in Player and Hunter mode: Rate Up Draw Tickets, Essence Stones and Gold. Every floor is weak to all elements.","Special Commissions pay a one-time reward per kill-count tier on listed monsters."]},
+{id:"ch76",ph:"p2",line:"story",t:"Clear Chapter 7-6",req:["ch74"],un:"Hard story",tags:["currency"],src:[88,233],conf:"official",
+ todo:["First clears on Hard give Essence Stones and Custom Draw Tickets. Push Hard whenever your power allows."]},
+{id:"ch8",ph:"p2",line:"story",t:"Clear Chapter 8",req:["ch76"],un:"Battle Class",tags:["currency"],src:[75],conf:"official",
+ todo:["Claim the Battle Class reward each time your best Sung Jinwoo Mode team passes a Total Power threshold: Essence Stones and Gold.","Armory bonuses count towards it."]},
+{id:"ch9",ph:"p2",line:"story",t:"Clear Chapter 9",req:["ch8"],un:"Army of Shadows; necklace and bracelet slots",tags:["power"],src:[86,85,236],conf:"official",
+ todo:["Level the Army of Shadows with Shadow Energy; it raises every Shadow and is one of the biggest Total Power gains.","Put your strongest Shadow first in the team; the leader's power applies to the whole team.","Fill the new necklace and bracelet slots."]},
+{id:"ch10",ph:"p2",line:"story",t:"Clear Chapter 10",req:["ch9"],un:"Battlefield of Time; Edge of Illusion and Dreams",tags:["seasonal","currency"],src:[100,208],conf:"official",
+ todo:["Battlefield of Time: clear each boss within 1:30 for every top Achievement Reward. Seasons run 5 weeks (4 to play).","Edge of Illusion and Dreams: co-op bosses with 5 free tickets a week during a season."],
+ warn:"Edge of Illusion tickets are not given off-season, so use each week's tickets."},
+{id:"ch11",ph:"p2",line:"story",t:"Clear Chapter 11",req:["ch10"],un:"Successors",tags:["power"],src:[211],conf:"official",
+ todo:["Successors follow Jinwoo's level. Raise one through its exclusive weapon, artifacts, skills and upgrades. Legacy Seals draw more."]},
+{id:"ch12",ph:"p2",line:"story",t:"Clear Chapter 12",req:["ch11"],un:"Ring and earring slots",tags:["power"],src:[85,4],conf:"official",
+ todo:["Earrings have one main stat (Additional MP), so crafting one needs no main-stat material."]},
+{id:"lv30",ph:"p2",line:"level",t:"Sung Jinwoo reaches level 30",req:["lv7"],un:"Armory",tags:["power"],src:[109,236],conf:"official",
+ todo:["Every Jinwoo weapon you own goes into the Armory and adds part of its Total Power.","Enhance all slots evenly with Marks of Time."]},
+{id:"hlv40",ph:"p2",line:"level",t:"A hunter reaches level 40",req:["lv30"],un:"Hunter Upgrade (15 per hunter)",tags:["power"],src:[83],conf:"official",
+ todo:["Upgrade your main team with Mana Power Elixir from Gates. Hunters cannot pass Jinwoo's level, so his level comes first."]},
+
+{id:"ch14",ph:"p3",line:"story",t:"Clear Chapter 14",req:["ch12"],un:"Power of Calamity; Challenge Medals",tags:["seasonal","currency"],src:[103,76],conf:"official",
+ todo:["Power of Calamity: two teams, best damage counts. Ranking starts on Hard.","Claim last week's rank rewards during the next week; after that they are gone."],
+ warn:"Play is blocked on Wednesdays 23:50 to 00:00 UTC while the ranking is calculated."},
+{id:"ch15",ph:"p3",line:"story",t:"Clear Chapter 15",req:["ch14"],un:"Battlefield of Chaos, Gems, Reverse Mode",tags:["daily","power"],src:[122,120,88,236],conf:"official",
+ todo:["Battlefield of Chaos gives gems. Clear a tier's Battle Missions to sweep it; Tier 16 and up gives gem promotion material.","Gem stats by colour: Attack%, HP%, Crit Damage, Precision, MP Consumption Reduction, Defense%.","Reverse Mode replays chapters with hunters for its own Battle Missions."]},
+{id:"ch18",ph:"p3",line:"story",t:"Clear Normal Chapter 18",req:["ch15"],un:"Mind Rift (core farm)",tags:["daily"],src:[210],conf:"official",
+ todo:["Farm Cores here. Clear-count rewards follow your Battle Tier."]},
+{id:"h10",ph:"p3",line:"hard",t:"Clear Hard Chapter 10",req:["ch76","ch10"],un:"Cores",tags:["power"],src:[141,236],conf:"official",
+ todo:["Equip Cores that match Jinwoo's element first, then the recommended stats shown at the top of each slot (Mind, Body, Energy).","Level, enhance and limit-break the ones you keep. Feeding a limit-broken core passes on its tier."]},
+{id:"leg1",ph:"p3",line:"runes",t:"Register a Legendary Skill Rune or Blessing Stone",req:["ch4"],un:"Skill Research",tags:["power"],src:[153,236],conf:"official",
+ todo:["Later (4 million Total Power), synthesise Transcendent runes and stones here. Materials come from the Honor Tokens shop and Legendary fusion or refinement."]},
+{id:"gem2",ph:"p3",line:"gems",t:"Fill gem page 1 with Rank 4+ gems",req:["ch15"],un:"Gem page 2",tags:["power"],src:[120,96],conf:"official",
+ todo:["Refine Rank 6 gems of B tier or lower into A tier with the same stats. It costs Essence Stones; a full point gauge guarantees your goal."]},
+{id:"nl",ph:"p3",line:"job",t:"Job Change: Night Lord",req:["ch9"],un:"Second weapon slot for Jinwoo",tags:["power"],src:[80,84],conf:"official",
+ todo:["Job Change tests open from story missions and achievements; tap the Job Emblem on the Sung Jinwoo screen to see yours.","Job Changes also give Stat Points, new skills and Blessing Stones."]},
+
+{id:"ch23",ph:"p4",line:"story",t:"Clear Normal Chapter 23",req:["ch18"],un:"Architect's Test, Overseer's Forbidden Library, Hunter Co-Op Training",tags:["seasonal","currency","power"],src:[181,184,207],conf:"official",
+ todo:["Architect's Test (seasonal) gives Essence Stones; its level follows your Battle Tier.","Overseer's Forbidden Library (seasonal): every hunter counts as every element; stage rewards once per season.","Hunter Co-Op Training: train one element's classes first."]},
+{id:"tp2m",ph:"p4",line:"power",t:"Main team reaches 2 million Total Power",req:["ch8"],un:"Intermediate farming",tags:["currency"],src:[233,236],conf:"official",
+ todo:["Spend Honor Tokens on Legacy Seal, Hunter Training Handbooks and the Transcendent Stone Selection Chest.","Clear Edge of Illusion and Dreams, Battlefield of Time, the Overseer's Library and the Architect's Test every season."]},
+{id:"ch25",ph:"p4",line:"story",t:"Clear Normal Chapter 25",req:["ch23"],un:"Workshop of Brilliant Light",tags:["daily","power"],src:[127],conf:"official",
+ todo:["Your first entry is free; after that each entry costs an invitation, and 2 free invitations come back each daily reset.","Seasons last 2 weeks and the recommended element changes by tier. Clearing a difficulty lets you sweep it and every lower one.","Shards of the Monarchs from here level Remnant Power."]},
+{id:"wobl1",ph:"p4",line:"workshop",t:"Clear Workshop of Brilliant Light Tier 1",req:["ch25"],un:"Remnant Power",tags:["power"],src:[142],conf:"official",
+ todo:["Summon a Monarch in battle for buffs. Each Remnant level gives Passive Points for its skills."]},
+{id:"monarch",ph:"p4",line:"job",t:"Job Change: Monarch of Shadows",req:["nl"],un:"Shadow Enforcer",tags:["daily"],src:[182,236],conf:"official",
+ todo:["Send Shadows on Enforcer missions every day; more Shadows allow longer missions.","Official picks: Abyssal Fragment, Shadow Energy and Shadow Skill Scroll I for Total Power; Marks of Time I for the Armory."]},
+{id:"h25",ph:"p4",line:"hard",t:"Clear Hard Chapter 25",req:["h10"],un:"Expert story and Figures",tags:["power","currency"],src:[88,225],conf:"official",
+ todo:["Expert bosses unlock Figures, random stats for Jinwoo and hunters. Lock a good stat with Seals of Unity, re-roll the rest with Polish of Change."]},
+
+{id:"tp4m",ph:"p5",line:"power",t:"Main team reaches 4 million Total Power",req:["tp2m"],un:"Advanced challenge content",tags:["power"],src:[233,236],conf:"official",
+ todo:["Transcendent runes and stones are now essential (Skill Research). Try Amplification on them.","Push Workshop of Brilliant Light, Simulation Gate, Power of Calamity and the Deep Containment Zone."]},
+{id:"exp8",ph:"p5",line:"expert",t:"Clear Expert Chapter 8",req:["h25"],un:"Deep Containment Zone",tags:["daily"],src:[241],conf:"official",
+ todo:["Four hunters of one element activate Union, a once-per-battle burst.","Keys refill weekly. Multiplay spends extra keys for more rewards in one run."]},
+{id:"wobl10",ph:"p5",line:"workshop",t:"Clear Workshop Tier 10 in Sung Jinwoo Mode",req:["wobl1"],un:"Hall of the Monarchs",tags:["seasonal"],src:[216],conf:"official",
+ todo:["No entry cost and unlimited retries. Your season score is the sum of all 3 floors."]},
+{id:"bc85",ph:"p5",line:"power",t:"Reach Battle Class 85",req:["wobl1"],un:"The First Land (high-tier Workshop)",tags:["power"],src:[],conf:"guide",
+ todo:["A June 2026 community guide reports The First Land opening here. It is not in the official guide yet; check in game."]}
+];
+var MSI={};MS.forEach(function(m){MSI[m.id]=m});
+
+/* ---------- data: routine ----------
+   e: d (daily) | w (weekly) | s (season). need: milestone id that unlocks it (none = always). */
+var DY=[
+{id:"act",e:"d",t:"Claim Activity Funds",h:"Builds up for 48 hours, so claim at least every other day. Activate Bonus adds 30% Gold and EXP."},
+{id:"gates",e:"d",need:"ch2",t:"Gates: use your Dungeon Entry Keys",h:"Best daily EXP. Pick the reward you need, and claim Gate missions before you level up."},
+{id:"mine",e:"d",need:"ch2",t:"Dispatch mining teams",h:"Use Dispatch All on cleared gates; they leave the list after 168 hours."},
+{id:"ud",e:"d",need:"ch5",t:"Unstable Dungeon",h:"Free keys on the artifact you set in Reward Settings."},
+{id:"chaos",e:"d",need:"ch15",t:"Battlefield of Chaos",h:"Gems. Sweep tiers whose Battle Missions are done."},
+{id:"rift",e:"d",need:"ch18",t:"Mind Rift",h:"Cores and core growth material."},
+{id:"wobl",e:"d",need:"ch25",t:"Workshop of Brilliant Light",h:"2 free invitations come back each day; do not sit at the cap."},
+{id:"enf",e:"d",need:"monarch",t:"Shadow Enforcer missions",h:"Send Shadows out before you log off."},
+{id:"dm",e:"d",t:"Daily Missions",h:"Claim every point reward."},
+{id:"pass",e:"d",t:"Hunter Pass missions",h:"Pass EXP for its tier rewards."},
+{id:"story",e:"d",t:"Push one more Story or Hard stage",h:"First clears give Essence Stones and Custom Draw Tickets."},
+{id:"wm",e:"w",t:"Weekly Missions to the maximum",h:"If you do not reach the maximum, the points carry over instead of resetting."},
+{id:"ham",e:"w",t:"Hunters Association Missions",h:"Changes every weekly reset."},
+{id:"conq",e:"w",need:"ch5",t:"Unstable Dungeon Conquest Missions",h:"Artifact materials by number of clears."},
+{id:"chaosw",e:"w",need:"ch15",t:"Battlefield of Chaos clear-count rewards",h:"The clear count resets every week."},
+{id:"poc",e:"w",need:"ch14",t:"Power of Calamity, and last week's rank reward",h:"Rank rewards can only be claimed during the following week."},
+{id:"sim",e:"w",t:"Simulation Gate: use every Entry Code",h:"Codes reset to the maximum each week, so unused codes are wasted."},
+{id:"eoid",e:"w",need:"ch10",t:"Edge of Illusion and Dreams: 5 tickets",h:"In season only."},
+{id:"dcz",e:"w",need:"exp8",t:"Deep Containment Zone keys",h:"Keys refill weekly."},
+{id:"gboss",e:"w",need:"guild",t:"Guild Boss with both teams",h:"Your two best scores add up."},
+{id:"trial",e:"w",need:"ch74",t:"Try new Battlefield of Trials floors",h:"Rate Up Draw Tickets on the way up."},
+{id:"bot",e:"s",need:"ch10",t:"Battlefield of Time: each boss under 1:30",h:"All top Achievement Rewards. Figures and guild buffs do not apply here."},
+{id:"arch",e:"s",need:"ch23",t:"The Architect's Test",h:"Essence Stones; rewards reset each season."},
+{id:"lib",e:"s",need:"ch23",t:"The Overseer's Forbidden Library",h:"Stage rewards once per season."},
+{id:"hall",e:"s",need:"wobl10",t:"Hall of the Monarchs",h:"No entry cost, unlimited retries."},
+{id:"cards",e:"s",t:"Seasonal Cards",h:"Cards and Card Points reset when the season ends; spend the points first."},
+{id:"ss",e:"s",t:"Special Summons (subscribers)",h:"Confirm your pick before the period ends."}
+];
+
+var SOURCES=[
+["Official ARISE guide (Netmarble): Fachtna's Essential Guide, October 2026",GUIDE+"240"],
+["Official: Content and Key Rewards Overview",GUIDE+"233"],["Official: Growth Guide by Total Power",GUIDE+"236"],
+["Official: Combat Styles and Classes",GUIDE+"237"],["Official: How to Set Up Artifacts",GUIDE+"238"],["Official: Currencies Overview",GUIDE+"239"],
+["Official: Sung Jinwoo (stat effects)",GUIDE+"79"],["Official: Change Job",GUIDE+"80"],["Official: Draw",GUIDE+"91"],["Official: Draw Rate (Draw Support rules)",GUIDE+"115"],
+["Official: Story",GUIDE+"88"],["Official: Gates",GUIDE+"89"],["Official: Battle Class",GUIDE+"75"],["Official: Army of Shadows",GUIDE+"86"],
+["Official: Artifacts",GUIDE+"85"],["Official: Weapons",GUIDE+"84"],["Official: Hunters",GUIDE+"83"],["Official: Unstable Dungeon",GUIDE+"99"],
+["Official: Workshop of Brilliant Light",GUIDE+"127"],["Official: Power of Calamity",GUIDE+"103"],["Official: Missions",GUIDE+"94"],
+["Official: Deep Containment Zone",GUIDE+"241"],["Official: Remnant Power",GUIDE+"142"],["Official: Core",GUIDE+"141"],["Official: Gems",GUIDE+"120"],
+["Game8: Stat Point Investment Guide (June 2024)","https://game8.co/games/Solo-Leveling-Arise/archives/458275"],
+["Driffle: Solo Leveling: Arise beginners guide (2026)","https://driffle.com/blog/solo-leveling-arise-beginners-guide/"],
+["Netmarble forum: The ultimate guide up to the June update (community, 2026)","https://forum.netmarble.com/slv_en/view/23/106535"],
+["Steam discussion: crit rate from Agility (player test)","https://steamcommunity.com/app/2373990/discussions/0/689742326557431776/"],
+["Dotgg: Sung Jinwoo weapon tier list","https://dotgg.gg/solo-leveling-arise/sung-jinwoo-weapon-tier-list/"]
+];
+
+/* ---------- state ---------- */
+function blank(){return {v:1,m:{},d:{},w:{},s:{},dk:"",wk:"",prof:"f2p",tp:"",rh:0,
+  st:{pts:100,ct:"boss",pt:"",atk:"",prec:"",cr:"",cd:"",gs:"",gp:"",ga:"",surv:false,mana:false},
+  dr:{b:"rateup",w:"one",c:1,p:0,t:30,es:0,rate:250,g:false,dia:1},
+  pk:[{n:"Example pack (not real)",price:9.99,t:10,es:0,dia:0}]}}
+var S=blank(),UI={};
+function fromSer(d){
+  var b=blank();
+  if(!d||typeof d!=="object")return b;
+  Object.keys(b).forEach(function(k){
+    if(d[k]===undefined||d[k]===null)return;
+    if(Array.isArray(b[k])){if(Array.isArray(d[k]))b[k]=d[k];return}
+    if(typeof b[k]==="object"){if(typeof d[k]==="object"&&!Array.isArray(d[k]))b[k]=Object.assign(b[k],d[k]);return}
+    if(typeof d[k]===typeof b[k])b[k]=d[k];
+  });
+  if(["f2p","light","spender"].indexOf(b.prof)<0)b.prof="f2p";
+  return b;
+}
+function ser(){return JSON.parse(JSON.stringify(S))}
+function hasProgress(){return Object.keys(S.m).length>0||Object.keys(S.d).length>0||Object.keys(S.w).length>0}
+function setSave(t){$("#save").textContent=t}
+function loadLocal(){
+  try{var raw=localStorage.getItem(KEY);if(raw)S=fromSer(JSON.parse(raw))}catch(e){}
+  try{UI=JSON.parse(localStorage.getItem(UIKEY)||"{}")||{}}catch(e){UI={}}
+}
+function saveLocal(){try{localStorage.setItem(KEY,JSON.stringify(ser()))}catch(e){}}
+function saveUI(){try{localStorage.setItem(UIKEY,JSON.stringify(UI))}catch(e){}}
+var dbDoc=null,writing=false,dirty=false,firstSnap=true,saveTimer=null;
+function queueSave(){
+  saveLocal();
+  if(!dbDoc){setSave("Saved on this device");return}
+  dirty=true;setSave("Saving…");clearTimeout(saveTimer);saveTimer=setTimeout(flush,700);
+}
+function flush(){
+  if(!dbDoc)return;
+  if(writing){clearTimeout(saveTimer);saveTimer=setTimeout(flush,700);return}
+  writing=true;dirty=false;
+  dbDoc.set(ser()).then(function(){setSave("Saved to your account")},function(){setSave("Saved on this device")}).then(function(){writing=false});
+}
+
+/* ---------- resets ---------- */
+function shifted(){return new Date(Date.now()-((+S.rh||0)*36e5))}
+function dayKey(){return shifted().toISOString().slice(0,10)}
+function weekKey(){var d=shifted(),back=(d.getUTCDay()-4+7)%7;return new Date(d.getTime()-back*864e5).toISOString().slice(0,10)}
+function rollResets(){
+  var ch=false,dk=dayKey(),wk=weekKey();
+  if(S.dk!==dk){S.d={};S.dk=dk;ch=true}
+  if(S.wk!==wk){S.w={};S.wk=wk;ch=true}
+  return ch;
+}
+
+/* ---------- path ---------- */
+var PROF_NOTE={f2p:"Order favours free Essence Stones and tickets.",light:"Order balances power and free currency.",spender:"Order favours Total Power systems first."};
+function status(m){if(S.m[m.id])return "done";return (m.req||[]).every(function(r){return S.m[r]})?"ready":"locked"}
+function srcLine(m){
+  if(!m.src||!m.src.length)return '<p class="src">Source: community guide (Netmarble forum, June 2026)</p>';
+  return '<p class="src">Source: '+m.src.map(function(id){return '<a href="'+GUIDE+id+'" target="_blank" rel="noopener">official guide '+id+'</a>'}).join(", ")+'</p>';
+}
+function msItem(m){
+  var st=status(m),need=(m.req||[]).filter(function(r){return !S.m[r]}).map(function(r){return MSI[r].t});
+  var side="";
+  if(m.f2p)side+='<p class="side"><b>Free to play:</b> '+esc(m.f2p)+'</p>';
+  if(m.sp)side+='<p class="side"><b>Spender:</b> '+esc(m.sp)+'</p>';
+  return '<li class="ms" data-m="'+m.id+'" data-st="'+st+'">'+
+    '<label class="tick"><input type="checkbox" data-mt="'+m.id+'"'+(S.m[m.id]?" checked":"")+' aria-label="Done: '+esc(m.t)+'"></label>'+
+    '<div><div class="mh"><span class="mt">'+esc(m.t)+'</span><span class="pill '+st+'">'+(st==="done"?"Done":st==="ready"?"Ready":"Locked")+'</span><span class="conf '+m.conf+'">'+m.conf+'</span></div>'+
+    '<p class="un">Unlocks: '+esc(m.un)+(st==="locked"&&need.length?' · Needs: '+esc(need.join(", ")):'')+'</p>'+
+    '<details><summary>What to do</summary><ol>'+m.todo.map(function(s){return '<li>'+esc(s)+'</li>'}).join("")+'</ol>'+
+    (m.warn?'<p class="warn">'+esc(m.warn)+'</p>':'')+side+srcLine(m)+'</details></div></li>';
+}
+function renderPhases(){
+  $("#phases").innerHTML=PH.map(function(p){
+    var ms=MS.filter(function(m){return m.ph===p[0]}),dn=ms.filter(function(m){return S.m[m.id]}).length;
+    return '<section class="grp"><header><h3>'+esc(p[1])+'</h3><span class="cnt">'+dn+'/'+ms.length+'</span><p>'+esc(p[2])+'</p></header><ul>'+ms.map(msItem).join("")+'</ul></section>';
+  }).join("");
+}
+function renderNext(){
+  var r=E.route(MS,S.m,S.prof),box=$("#next");
+  if(!r.length){
+    box.innerHTML='<p class="sysbar">[ System ] Quest complete</p><h3>Every milestone is done</h3><p class="note">Keep up the Daily tab and push the seasonal modes for rank rewards.</p>';
+    $("#s-next").textContent="All done";return;
+  }
+  var m=MSI[r[0].id],others=E.available(MS,S.m).filter(function(x){return x.id!==m.id});
+  var why=r[0].why.map(function(w){return E.WEIGHTS[w]?E.WEIGHTS[w].why:"Leads to "+w.replace(" next"," more")+"."}).join(" ");
+  box.innerHTML='<p class="sysbar">[ System ] Next quest</p>'+
+    '<h3>'+esc(m.t)+' <span class="conf '+m.conf+'">'+m.conf+'</span></h3>'+
+    '<p class="un">Unlocks: <b>'+esc(m.un)+'</b></p>'+
+    '<ol>'+m.todo.map(function(s){return '<li>'+esc(s)+'</li>'}).join("")+'</ol>'+
+    (m.warn?'<p class="warn">'+esc(m.warn)+'</p>':'')+
+    '<p class="note">Why now: '+esc(why||"It is the next step in the story.")+'</p>'+
+    '<div class="row" style="margin-top:10px"><button type="button" class="btn pri" data-done="'+m.id+'">Mark done</button></div>'+
+    (others.length?'<p class="note" style="margin-top:10px">Also ready now:</p><div class="chips">'+others.map(function(o){return '<button type="button" class="chip" data-go="'+o.id+'">'+esc(o.t)+'</button>'}).join("")+'</div>':'');
+  $("#s-next").textContent=m.un.split(/[;,(]/)[0].trim();
+}
+function renderWeights(){
+  var p=S.prof;
+  $("#weights").innerHTML='<thead><tr><th>Signal</th><th>Weight</th><th>Why</th></tr></thead><tbody>'+
+    Object.keys(E.WEIGHTS).map(function(k){var w=E.WEIGHTS[k];return '<tr><td>'+k+'</td><td class="n">'+w[p]+'</td><td>'+esc(w.why)+'</td></tr>'}).join("")+'</tbody>';
+}
+
+/* ---------- stats ---------- */
+var ST_IDS=["pts","ct","pt","atk","prec","cr","cd","gs","gp","ga","surv","mana"];
+function stLoad(){ST_IDS.forEach(function(k){var el=$("#st-"+k);if(el.type==="checkbox")el.checked=!!S.st[k];else el.value=S.st[k]})}
+function stRead(){ST_IDS.forEach(function(k){var el=$("#st-"+k);S.st[k]=el.type==="checkbox"?el.checked:el.value})}
+function num(v){return v===""||v==null||isNaN(+v)?undefined:+v}
+function renderStats(){
+  var s=S.st,ptDefault=s.ct==="boss"?90:s.ct==="time"?80:0;
+  $("#st-pt").placeholder=ptDefault?String(ptDefault):"not used";
+  var r=E.plan({points:num(s.pts)||0,content:s.ct,precTarget:num(s.pt)||ptDefault,survival:s.surv,mana:s.mana,
+    readings:{atk:num(s.atk),prec:num(s.prec),cr:num(s.cr),cd:num(s.cd)},gains:{str:num(s.gs),per:num(s.gp),agi:num(s.ga)}});
+  var tot=Math.max(1,E.STATS.reduce(function(a,k){return a+r.alloc[k]},0));
+  var label={str:"STR",vit:"VIT",agi:"AGI",int:"INT",per:"PER"};
+  $("#st-out").innerHTML='<h3>Your plan <span class="conf '+r.confidence+'">'+r.confidence+'</span>'+(r.mode==="rules"?'<span class="pill">guide rules</span>':'<span class="pill">damage model</span>')+'</h3>'+
+    '<div class="alloc">'+["str","per","agi","vit","int"].map(function(k){return '<div class="bar"><span>'+label[k]+'</span><i style="--w:'+(100*r.alloc[k]/tot).toFixed(1)+'%"></i><b>'+r.alloc[k]+'</b></div>'}).join("")+'</div>'+
+    '<ol>'+r.steps.map(function(t){return '<li>'+esc(t)+'</li>'}).join("")+'</ol>'+
+    (r.mode==="rules"?'<p class="note" style="margin-top:8px">Fill in your stat screen and what one point adds for a plan worked out from your own numbers.</p>':'<p class="note" style="margin-top:8px">The model treats Precision as your minimum hit as a share of your maximum, so the average hit grows by half of each Precision point. Check the result on the stat preview before you confirm.</p>');
+}
+
+/* ---------- draws ---------- */
+var DR_IDS=["b","w","c","p","t","es","rate","g"];
+function drLoad(){DR_IDS.forEach(function(k){var el=$("#dr-"+k);if(el.type==="checkbox")el.checked=!!S.dr[k];else el.value=S.dr[k]});$("#pk-dia").value=S.dr.dia}
+function drRead(){DR_IDS.forEach(function(k){var el=$("#dr-"+k);S.dr[k]=el.type==="checkbox"?el.checked:(k==="b"||k==="w"?el.value:(num(el.value)||0))})}
+function pct(p){return p>=0.9995?"100%":p<0.0005?"0%":(p*100).toFixed(p<0.1?1:0)+"%"}
+function renderDraws(){
+  var d=S.dr,b=E.BANNERS[d.b]||E.BANNERS.rateup;
+  $("#dr-w-f").hidden=b.list===1;
+  var pity=Math.max(0,Math.min(69,d.p|0)),copies=Math.max(1,Math.min(6,d.c|0));
+  var have=(d.t|0)+Math.floor((d.es||0)/Math.max(1,d.rate||250));
+  var o={banner:d.b,want:d.w,copies:copies,pity:pity,guaranteed:!!d.g};
+  var odds=E.drawOdds(Object.assign({},o,{draws:have})),need=E.drawsFor(o);
+  var target=(b.list===1||d.w==="list"?(b.list===1?"the featured hunter":"any of your picks"):"your specific pick")+(copies>1?" ×"+copies:"");
+  var rows="";for(var k=1;k<=copies;k++)rows+='<tr><td>'+k+(k===1?" copy":" copies")+' (A'+(k-1)+')</td><td class="n">'+pct(odds.atLeast[k])+'</td></tr>';
+  $("#dr-out").innerHTML='<h3>With your '+have+' draws <span class="conf official">official rules</span></h3>'+
+    '<p class="note">Draw Support '+pity+'/70</p><div class="gauge" aria-hidden="true"><i style="--w:'+(pity/70*100).toFixed(1)+'%"></i><u></u></div>'+
+    '<div class="big">'+
+      '<div><b>'+pct(odds.atLeast[copies])+'</b><span>Chance to get '+esc(target)+'</span></div>'+
+      '<div><b>'+need.mean+'</b><span>Draws needed on average</span></div>'+
+      '<div><b>'+need.p90+'</b><span>Draws for 90% certainty</span></div>'+
+      '<div><b>'+(need.ceiling==null?"none":need.ceiling)+'</b><span>'+(need.ceiling==null?"Hard ceiling: a specific pick can keep missing":"Hard ceiling (worst case)")+'</span></div>'+
+    '</div>'+
+    (copies>1?'<div class="tw"><table class="t"><thead><tr><th>Target</th><th>Chance with your draws</th></tr></thead><tbody>'+rows+'</tbody></table></div>':'')+
+    '<p class="note" style="margin-top:8px">'+(have<need.p50?"You are short of an even chance by "+(need.p50-have)+" draws. Keep saving rather than starting this banner.":have>=(need.ceiling||Infinity)?"You have enough for the worst case. Go ahead.":"Above an even chance but not guaranteed. Pull only if a miss would not hurt your plan.")+' Expected SSRs of any kind: '+odds.ssrs.toFixed(1)+'.</p>';
+}
+function packRows(){
+  var rate=Math.max(1,S.dr.rate||250),dia=+S.dr.dia||0;
+  return S.pk.map(function(p,i){
+    var draws=(+p.t||0)+((+p.es||0)+(+p.dia||0)*dia)/rate,per=+p.price>0?draws/(+p.price):0;
+    return {i:i,p:p,draws:draws,per:per};
+  });
+}
+function perCell(r,best,n){return (r.per?r.per.toFixed(2):"—")+(r.per&&r.per===best&&n>1?' <span class="pill done">best</span>':'')}
+function renderPacks(){
+  var rows=packRows(),best=rows.reduce(function(a,r){return r.per>a?r.per:a},0);
+  $("#packs tbody").innerHTML=rows.map(function(r){
+    var p=r.p,f=function(k,w,t){return '<td class="'+(k==="n"?"nm":"")+'"><input data-pk="'+r.i+'" data-k="'+k+'" type="'+(t||"number")+'" value="'+esc(p[k])+'" aria-label="'+w+'"'+(t?"":' min="0" step="any" inputmode="decimal"')+'></td>'};
+    return '<tr>'+f("n","Pack name","text")+f("price","Price")+f("t","Draw tickets")+f("es","Essence Stones")+f("dia","Diamonds")+
+      '<td class="n">'+r.draws.toFixed(1)+'</td><td class="n">'+perCell(r,best,rows.length)+'</td>'+
+      '<td><button type="button" class="btn" data-pkdel="'+r.i+'" aria-label="Remove '+esc(p.n)+'">×</button></td></tr>';
+  }).join("");
+}
+function renderPlans(){$$("#plans [data-plan]").forEach(function(el){el.setAttribute("data-on",String(el.getAttribute("data-plan")===S.prof))})}
+
+/* ---------- daily ---------- */
+function bucket(e){return e==="d"?S.d:e==="w"?S.w:S.s}
+function renderDaily(){
+  var show=!!UI.lock,left=0;
+  ["d","w","s"].forEach(function(e){
+    var items=DY.filter(function(x){return x.e===e}),open=0,got=0,b=bucket(e);
+    $("#dl-"+e).innerHTML=items.map(function(x){
+      var locked=x.need&&!S.m[x.need];if(locked&&!show)return "";
+      if(!locked){open++;if(b[x.id])got++}
+      return '<li class="'+(locked?"lock":"")+(b[x.id]?" got":"")+'"><input type="checkbox" data-dt="'+e+':'+x.id+'"'+(b[x.id]?" checked":"")+(locked?" disabled":"")+' aria-label="'+esc(x.t)+'">'+
+        '<div><p class="dt">'+esc(x.t)+'</p><p class="dh">'+esc(x.h)+(locked?" Unlocks with: "+esc(MSI[x.need].t)+".":"")+'</p></div></li>';
+    }).join("")||'<li><div></div><p class="dh">Nothing unlocked here yet. Tick milestones on the Path tab.</p></li>';
+    $("#c-"+e).textContent=got+"/"+open;
+    if(e==="d")left=open-got;
+  });
+  $("#s-day").textContent=left?left+" left":"All done";
+}
+
+/* ---------- header ---------- */
+function renderHead(){
+  var dn=MS.filter(function(m){return S.m[m.id]}).length;
+  $("#s-ms").textContent=dn+"/"+MS.length;
+  var tier=S.m.tp4m?"4M+ advanced":S.m.tp2m?"2M+ mid":S.m.ch8?"Under 2M":"Starter";
+  $("#s-tier").textContent=tier;
+  $$("#prof button").forEach(function(b){b.setAttribute("aria-pressed",String(b.getAttribute("data-p")===S.prof))});
+  $("#prof-note").textContent=PROF_NOTE[S.prof];
+}
+function sync(){rollResets();renderHead();renderNext();renderPhases();renderWeights();renderDaily();renderPlans()}
+function syncAll(){sync();stLoad();drLoad();$("#rh").value=S.rh;renderStats();renderDraws();renderPacks()}
+
+/* ---------- tabs ---------- */
+var TABS=["path","stats","draws","daily","build","about"];
+function showTab(){
+  var h=(location.hash||"").replace("#",""),t=TABS.indexOf(h)<0?"path":h;
+  TABS.forEach(function(x){$("#p-"+x).classList.toggle("on",x===t)});
+  $$(".menu a").forEach(function(a){if(a.getAttribute("data-tab")===t)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
+}
+window.addEventListener("hashchange",function(){showTab();window.scrollTo(0,0)});
+
+/* ---------- events ---------- */
+document.addEventListener("change",function(e){
+  var t=e.target,id;
+  if((id=t.getAttribute("data-mt"))){if(t.checked)S.m[id]=true;else delete S.m[id];sync();queueSave();return}
+  if((id=t.getAttribute("data-dt"))){var p=id.split(":"),b=bucket(p[0]);if(t.checked)b[p[1]]=true;else delete b[p[1]];renderDaily();queueSave();return}
+  if(t.id==="dl-lock"){UI.lock=t.checked;saveUI();renderDaily();return}
+});
+document.addEventListener("click",function(e){
+  var b=e.target.closest("button");if(!b)return;
+  var v;
+  if((v=b.getAttribute("data-done"))){S.m[v]=true;sync();queueSave();return}
+  if((v=b.getAttribute("data-go"))){var li=$('[data-m="'+v+'"]');if(li){var d=$("details",li);if(d)d.open=true;li.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"center"})}return}
+  if((v=b.getAttribute("data-p"))){S.prof=v;sync();queueSave();return}
+  if((v=b.getAttribute("data-pkdel"))!==null&&v!==""){S.pk.splice(+v,1);renderPacks();queueSave();return}
+});
+$("#p-stats").addEventListener("input",function(){stRead();renderStats();queueSave()});
+$("#p-stats").addEventListener("change",function(){stRead();renderStats();queueSave()});
+["input","change"].forEach(function(ev){$("#p-draws").addEventListener(ev,function(e){
+  var t=e.target,i=t.getAttribute("data-pk");
+  if(i!==null){S.pk[+i][t.getAttribute("data-k")]=t.value;updPackCells();queueSave();return}
+  if(t.id==="pk-dia"){S.dr.dia=num(t.value)||0;renderPacks();queueSave();return}
+  drRead();renderDraws();renderPacks();queueSave();
+})});
+function updPackCells(){ // keep focus while typing: recompute only the number cells
+  var rows=packRows(),best=rows.reduce(function(a,r){return r.per>a?r.per:a},0);
+  $$("#packs tbody tr").forEach(function(tr,i){var r=rows[i];if(!r)return;
+    var c=tr.querySelectorAll("td.n");c[0].textContent=r.draws.toFixed(1);c[1].innerHTML=perCell(r,best,rows.length)});
+}
+$("#pk-add").addEventListener("click",function(){S.pk.push({n:"",price:"",t:"",es:"",dia:""});renderPacks();queueSave();var r=$$("#packs tbody tr");if(r.length)$("input",r[r.length-1]).focus()});
+$("#rh").addEventListener("change",function(){var v=num(this.value);S.rh=v==null?0:Math.max(0,Math.min(23,Math.round(v)));this.value=S.rh;S.dk="";S.wk="";sync();queueSave()});
+$("#dl-sclr").addEventListener("click",function(){S.s={};renderDaily();queueSave()});
+document.addEventListener("visibilitychange",function(){if(document.visibilityState==="visible"&&rollResets()){renderDaily();queueSave()}});
+
+/* ---------- backup: export and import ---------- */
+function bkMsg(t){$("#bk-msg").textContent=t}
+/* On claude.ai the page cannot start a download itself, so it asks the downloads capability,
+   which shows the viewer a save prompt. Anywhere else a plain download link does the job. */
+function bkSave(name,text){
+  var c=window.claude,ask=c&&c.use?c.use("downloads"):Promise.resolve(null);
+  return ask.then(function(dl){
+    if(dl)return dl.save({filename:name,data:text}).then(function(){return "saved"},function(e){return e&&e.code==="declined"?"declined":"failed"});
+    var url=URL.createObjectURL(new Blob([text],{type:"application/json"})),a=document.createElement("a");
+    a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();
+    setTimeout(function(){URL.revokeObjectURL(url)},1000);
+    return "saved";
+  });
+}
+$("#bk-exp").addEventListener("click",function(){
+  var name="monarch-compass-progress-"+new Date().toISOString().slice(0,10)+".json",n=Object.keys(S.m).length;
+  bkSave(name,JSON.stringify(ser(),null,2)).then(function(r){
+    bkMsg(r==="saved"?"Exported "+n+" milestones to "+name+".":r==="declined"?"Export cancelled.":"This view cannot save files. Open the page in a browser and export from there.");
+  });
+});
+var bkPending=null;
+function bkApply(d){S=fromSer(d);syncAll();queueSave();bkMsg("Imported "+Object.keys(S.m).length+" milestones.")}
+$("#bk-imp").addEventListener("click",function(){$("#bk-file").click()});
+$("#bk-file").addEventListener("change",function(e){
+  var f=e.target.files&&e.target.files[0];e.target.value="";if(!f)return;
+  $("#bk-ask").hidden=true;bkPending=null;
+  f.text().then(function(t){
+    var d;try{d=JSON.parse(t)}catch(x){bkMsg("That file is not valid JSON, so nothing was imported.");return}
+    if(!d||d.v!==1||!d.m||typeof d.m!=="object"||Array.isArray(d.m)){bkMsg("That file is not a Monarch Compass backup, so nothing was imported.");return}
+    if(!hasProgress()){bkApply(d);return}
+    bkPending=d;bkMsg("");
+    $("#bk-ask-t").textContent="Replace your current progress ("+Object.keys(S.m).length+" milestones) with this file ("+Object.keys(d.m).length+")?";
+    $("#bk-ask").hidden=false;
+  });
+});
+$("#bk-yes").addEventListener("click",function(){var d=bkPending;bkPending=null;$("#bk-ask").hidden=true;if(d)bkApply(d)});
+$("#bk-no").addEventListener("click",function(){bkPending=null;$("#bk-ask").hidden=true;bkMsg("Import cancelled. Nothing changed.")});
+
+/* ---------- boot ---------- */
+$("#srclist").innerHTML=SOURCES.map(function(s){return '<li><a href="'+s[1]+'" target="_blank" rel="noopener">'+esc(s[0])+'</a></li>'}).join("");
+loadLocal();
+$("#dl-lock").checked=!!UI.lock;
+if(rollResets())saveLocal();
+syncAll();showTab();
+setSave("Saved on this device");
+
+/* On claude.ai, progress also syncs to the viewer's account (db + user capabilities).
+   Elsewhere window.claude is absent and the page keeps using this browser's storage. */
+(function connect(){
+  var c=window.claude;if(!c||!c.use)return;
+  Promise.all([c.use("db"),c.use("user")]).then(function(r){
+    var db=r[0],user=r[1];
+    if(!db||!user)return null;
+    return user.id().then(function(id){
+      if(!id)return null;
+      dbDoc=db.doc("data/users/"+id+"/progress");
+      setSave("Syncing…");
+      $("#bk-where").textContent="Your progress is saved to your Claude account. Export it to a file to keep a copy or to move it to the Monarch Compass website; importing replaces what is here.";
+      $("#priv-text").textContent="On claude.ai your progress is saved to your Claude account, in a part of the page's data only you can read.";
+      dbDoc.onSnapshot(function(snap){
+        if(writing||dirty)return;
+        if(snap.exists){S=fromSer(snap.data()||{});rollResets();saveLocal();syncAll();setSave("Saved to your account")}
+        else{if(firstSnap&&hasProgress())queueSave();else setSave("Saved to your account")}
+        firstSnap=false;
+      },function(){dbDoc=null;setSave("Saved on this device")});
+    });
+  }).catch(function(){dbDoc=null;setSave("Saved on this device")});
+})();
+})();
+</script>
+
+<!-- site-only:start (offline support; tools/build-artifact.mjs drops this for the claude.ai artifact) -->
+<div class="toast" id="upd" role="status" hidden><span>Update available</span><button type="button" class="btn" id="upd-go">Reload</button><button type="button" class="x" id="upd-x" aria-label="Dismiss">×</button></div>
+<script>
+/* Offline support: register the service worker and offer new versions with a toast. */
+(function(){
+  if(!("serviceWorker" in navigator)||!/^https?:$/.test(location.protocol))return;
+  var toast=document.getElementById("upd"),wanted=false,waiting=null;
+  function show(w){waiting=w;toast.hidden=false}
+  document.getElementById("upd-go").addEventListener("click",function(){wanted=true;if(waiting)waiting.postMessage("skip-waiting")});
+  document.getElementById("upd-x").addEventListener("click",function(){toast.hidden=true});
+  navigator.serviceWorker.addEventListener("controllerchange",function(){if(wanted){wanted=false;location.reload()}});
+  navigator.serviceWorker.register("sw.js").then(function(reg){
+    if(reg.waiting&&navigator.serviceWorker.controller)show(reg.waiting);
+    reg.addEventListener("updatefound",function(){
+      var w=reg.installing;if(!w)return;
+      w.addEventListener("statechange",function(){if(w.state==="installed"&&navigator.serviceWorker.controller)show(w)});
+    });
+    document.addEventListener("visibilitychange",function(){if(document.visibilityState==="visible")reg.update().catch(function(){})});
+  }).catch(function(){});
+})();
+
+/* Usage on the website: GoatCounter page and tab counts. No cookies, no personal data.
+   Off until GC_CODE holds a site code from goatcounter.com. */
+(function usage(){
+  var GC_CODE="";
+  if(!GC_CODE||!/^https?:$/.test(location.protocol))return;
+  var base=location.pathname.replace(/[^/]*$/,"");
+  function tab(){return (location.hash||"").replace("#","")||"path"}
+  function count(){try{window.goatcounter.count({path:base+tab(),title:"Monarch Compass: "+tab(),event:false})}catch(e){}}
+  window.goatcounter={no_onload:true};
+  var s=document.createElement("script");
+  s.async=true;s.src="https://gc.zgo.at/count.v4.js";s.setAttribute("data-goatcounter","https://"+GC_CODE+".goatcounter.com/count");
+  s.onload=function(){count();window.addEventListener("hashchange",count)};
+  document.head.appendChild(s);
+  var pc=document.getElementById("priv-count");
+  pc.hidden=false;
+  pc.textContent="This website counts page and tab views with GoatCounter. It sets no cookies and stores no personal data.";
+})();
+</script>
+<!-- site-only:end -->
+</body></html>

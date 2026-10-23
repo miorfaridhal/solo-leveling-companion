@@ -1,0 +1,18 @@
+{
+  "v": 1,
+  "m": {
+    "ch1": true, "ch2": true, "ch3": true, "lv7": true, "ch4": true, "guild": true, "ch51": true, "ch5": true,
+    "hid18": true, "ch74": true, "ch76": true, "ch8": true, "ch9": true, "ch10": true, "lv30": true
+  },
+  "d": {},
+  "w": {},
+  "s": { "bot": true },
+  "dk": "",
+  "wk": "",
+  "prof": "f2p",
+  "tp": "",
+  "rh": 0,
+  "st": { "pts": 240, "ct": "boss", "pt": "", "atk": "", "prec": "", "cr": "", "cd": "", "gs": "", "gp": "", "ga": "", "surv": false, "mana": false },
+  "dr": { "b": "rateup", "w": "one", "c": 1, "p": 20, "t": 40, "es": 5000, "rate": 250, "g": false, "dia": 1 },
+  "pk": []
+}
