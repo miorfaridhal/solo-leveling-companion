@@ -4,7 +4,7 @@
 
 A fan-made companion for **Solo Leveling: ARISE**. It works from your own progress. It tells you where to put Sung Jinwoo's stat points, which unlock to chase next, how many draws you need for a hunter or weapon, and what to clear every day and week. It has separate advice for free-to-play players and for spenders.
 
-**Open it:** https://miorfaridhal.github.io/solo-leveling-companion/ (after GitHub Pages is switched on for this repository)
+**Open it:** https://miorfaridhal.github.io/solo-leveling-companion/
 
 - **Install it.** On Android Chrome use *Add to Home screen*; on iPhone Safari use *Share → Add to Home Screen*. It opens full screen like an app.
 - **Works offline.** After the first visit the whole app is cached. When a new version is published, an *Update available* toast offers a one-tap reload.
